@@ -1,0 +1,182 @@
+body, ul, li, section, nav, h1, h2, p {
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  font: inherit;
+  color: inherit;
+
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header {
+  /*background: aquamarine;*/
+  border-bottom: 8px solid black;
+  box-sizing: border-box;
+}
+
+.header-nav {
+  height: 100%;
+  width: 800px;
+  margin: auto;
+}
+
+.header-nav .logo {
+  float: left;
+  font-weight: bold;
+}
+
+.nav-links {
+  float: right;
+}
+
+.nav-links li {
+  float: left;
+}
+
+.header-nav a {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.header-nav a:hover {
+  background: yellow;
+}
+
+main {
+  background: white;
+  box-sizing: border-box;
+  width: 800px;
+  padding: 20px;
+  min-height: 500px;
+  margin: auto;
+}
+
+
+main p:not(:first-child) {
+  margin-top: 20px;
+}
+
+main a, footer a {
+  font-weight: 600;
+}
+
+main a:hover, footer a:hover {
+  font-weight: bold;
+}
+
+.left {
+  width: 279px;
+  float: left;
+}
+
+.right {
+  float: right;
+  width: 459px;
+}
+
+footer {
+  border-top: 8px solid black;
+}
+
+footer p {
+  margin: auto;
+  width: 800px;
+  padding: 10px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.pic {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+.person {
+  width: 48%;
+  float: left;
+}
+
+.person:first-child {
+  margin-right: 4%;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 24px;
+}
+
+.ticket-link {
+  padding: 10px 20px;
+  border: 5px solid black;
+  display: block;
+  width: 110px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.ticket-link:hover {
+  background: #eee;
+}
+
+.front-page h1 {
+  font-size: 60px;
+}
+
+.front-page h2 {
+  font-size: 40px;
+}
+
+.front-page {
+  font-size: 20px;
+}
+
+.front-page .ticket-link {
+  margin: 20px 0;
+}
