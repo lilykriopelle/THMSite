@@ -57,16 +57,20 @@
 	var Site = React.createClass({
 	  displayName: 'Site',
 	
-	  // contentPanes: [<Home/>, <Upcoming/>, <About/>, <Contact/>, <Donate/>],
-	
-	  contentPanes: [React.createElement(Home, null), React.createElement(Upcoming, null), React.createElement(About, null), React.createElement(Contact, null), React.createElement(Donate, null)],
-	
-	  getInitialState: function () {
-	    return { activePaneIdx: 0 };
+	  contentPanes: {
+	    home: React.createElement(Home, null),
+	    upcoming: React.createElement(Upcoming, null),
+	    about: React.createElement(About, null),
+	    contact: React.createElement(Contact, null),
+	    donate: React.createElement(Donate, null)
 	  },
 	
-	  _switchPane: function (idx) {
-	    this.setState({ activePaneIdx: idx });
+	  getInitialState: function () {
+	    return { activePane: "home" };
+	  },
+	
+	  _switchPane: function (pane) {
+	    this.setState({ activePane: pane });
 	  },
 	
 	  render: function () {
@@ -74,7 +78,7 @@
 	      'div',
 	      null,
 	      React.createElement(Header, { switchPane: this._switchPane }),
-	      this.contentPanes[this.state.activePaneIdx],
+	      this.contentPanes[this.state.activePane],
 	      React.createElement(Footer, null)
 	    );
 	  }
@@ -19701,20 +19705,20 @@
 	          { className: "logo" },
 	          React.createElement(
 	            "a",
-	            { onClick: this.props.switchPane.bind(null, 0) },
+	            { onClick: this.props.switchPane.bind(null, "home") },
 	            "two headed monster"
 	          )
 	        ),
 	        React.createElement(
 	          "ul",
 	          { className: "nav-links group" },
-	          ["upcoming", "about", "contact", "donate"].map(function (link, idx) {
+	          ["upcoming", "about", "contact", "donate"].map(function (link) {
 	            return React.createElement(
 	              "li",
-	              { key: idx },
+	              { key: link },
 	              React.createElement(
 	                "a",
-	                { onClick: this.props.switchPane.bind(null, idx + 1) },
+	                { onClick: this.props.switchPane.bind(null, link) },
 	                link
 	              )
 	            );

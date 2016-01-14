@@ -8,25 +8,29 @@ var About = require('./about.jsx');
 var Contact = require('./contact.jsx');
 var Donate = require('./donate.jsx');
 
-
 var Site = React.createClass({
-  // contentPanes: [<Home/>, <Upcoming/>, <About/>, <Contact/>, <Donate/>],
 
-  contentPanes: [<Home/>, <Upcoming/>, <About/>, <Contact/>, <Donate/>],
-
-  getInitialState: function () {
-    return { activePaneIdx: 0 };
+  contentPanes: {
+    home: <Home/>,
+    upcoming: <Upcoming/>,
+    about: <About/>,
+    contact: <Contact/>,
+    donate: <Donate/>
   },
 
-  _switchPane: function (idx) {
-    this.setState({ activePaneIdx: idx });
+  getInitialState: function () {
+    return { activePane: "home" };
+  },
+
+  _switchPane: function (pane) {
+    this.setState({ activePane: pane });
   },
 
   render: function () {
     return (
       <div>
         <Header switchPane={ this._switchPane }/>
-        { this.contentPanes[this.state.activePaneIdx] }
+        { this.contentPanes[this.state.activePane] }
         <Footer/>
       </div>
     );
