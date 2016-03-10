@@ -13,7 +13,7 @@ var Home = React.createClass({
           <p>
             April 1-3
             <br/>
-            The A******* Theater
+            The Gallery at Access Theater
           </p>
 
           <p>
@@ -21,17 +21,11 @@ var Home = React.createClass({
             <br/>
             Amanda Keating
             <br/>
-            and Aeschylus (by way of Anne Carson)
-          </p>
-          <p>
-            and other happenings on the theme of strange brother/sister relationships.
+            and Sophocles
           </p>
           <p>
             Come eat, drink, and discuss.
           </p>
-
-          <TicketLink/>
-
         </section>
       </main>
     );

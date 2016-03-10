@@ -6,7 +6,7 @@ var Footer = React.createClass({
     return (
       <footer>
         <p>
-          Like what you see? <a href="mailto:twoheadedmonster.theater@gmail.com?subject=mailing list">Sign up for our mailing list</a> to be notified about future events!
+          Like what you see? <a href="mailto:twoheadedrep@gmail.com?subject=mailing list">Sign up for our mailing list</a> to be notified about future events!
         </p>
       </footer>
     );

@@ -7,35 +7,57 @@ var Upcoming = React.createClass({
     return (
       <main className="group">
         <section className="main-header">
-          <h1>WE ARE DOING A REP THING!!!</h1>
-          <h2>Dates/Location/Whatevs</h2>
-          <TicketLink/>
+          <h1>RETREAT/Electra</h1>
+          <h2>April 1-3, 2016</h2>
+          <h2>The Gallery at Access Theatre</h2>
+          <h2>380 Broadway</h2>
         </section>
 
         <section>
-          <h1>The New Play</h1>
+          <h1>RETREAT</h1>
           <h2>by Amanda Keating</h2>
           <h2>directed by Molly Clifford</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Featuring Caitlin Morris, Lizzie Fox, Bonnie Antosh, Ned Riseley and Max Reinhardsen.
           </p>
         </section>
 
         <section>
-          <h1>The Old Play</h1>
-          <h2>by Somebody Else</h2>
-          <h2>directed by Lily Riopelle</h2>
+          <h1>Electra</h1>
+          <h2>by Sophocles</h2>
+          <h2>adapted and directed by Lily Riopelle</h2>
+          <h2>with music by Frankie Simms</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Featuring Sarah Chalfie, Emma Orme, Natalie Rich, Leon Axt, Zach Fike Hodges, and Matthew Tiemstra.
           </p>
         </section>
 
-        <section>
-          <h1>The Other Stuff</h1>
+        <ul className="designers">
+          <li>Set Design: Cate McCrea</li>
+          <li>Light and Costume Design: Cheyenne Sykes</li>
+          <li>Sound Design: Val Monfeuga</li>
+          <li>Assistant Director: Katie Falter</li>
+        </ul>
+
+        <section className="events">
+          <h1>Other Events</h1>
           <ul>
-            <li>Some Music happening at a time</li>
-            <li>A Talkback happening at another time</li>
-            <li>etc</li>
+            <li>
+              <p>
+                Sunday, April 3 @ 12:30PM
+                <br/>
+                <span style={{fontStyle: "italic"}}>
+                  All Hallows Eve At the Amarillo Jehovah’s Witness Weekly Grief Group In the Backroom of the Y Just Off the Feeder
+                </span>
+                <br/>
+                written by Molly Beach Murphy, directed by Nikki DiLoreto
+              </p>
+            </li>
+            <li>
+              Sunday, April 3 @ 7:30PM
+              <br/>
+              PARTY at Access! Stay tuned for details.
+            </li>
           </ul>
         </section>
       </main>

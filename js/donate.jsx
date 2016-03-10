@@ -7,11 +7,15 @@ var Contact = React.createClass({
       <main className="group">
         <section>
           <p>
-            This is where we would talk about people giving us money, maybe via Fractured Atlas.
+            Two Headed Monster is a sponsored project of Fractured Atlas, a non-profit arts service organization.  Contributions for the charitable purposes of Two Headed Monster must be made payable to “Fractured Atlas” only and are tax-deductible to the extent permitted by law.
           </p>
+
           <p>
-            And maybe we would also say something like: If you want to support us but are not in a
-            position to donate, you can still help!  Reach out to us <a href="#">here</a> to discuss ways you can get involved.
+            To make a donation, <a href="http://www.fracturedatlas.org/site/fiscal/profile?id=13891">click here</a>.
+          </p>
+
+          <p>
+            THANK YOU!
           </p>
         </section>
       </main>

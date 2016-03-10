@@ -49,10 +49,11 @@
 	var Header = __webpack_require__(159);
 	var Footer = __webpack_require__(160);
 	var Home = __webpack_require__(161);
-	var Upcoming = __webpack_require__(162);
-	var About = __webpack_require__(163);
-	var Contact = __webpack_require__(164);
-	var Donate = __webpack_require__(165);
+	var Upcoming = __webpack_require__(163);
+	var Company = __webpack_require__(164);
+	var Team = __webpack_require__(165);
+	var Contact = __webpack_require__(166);
+	var Donate = __webpack_require__(167);
 	
 	var Site = React.createClass({
 	  displayName: 'Site',
@@ -60,9 +61,10 @@
 	  contentPanes: {
 	    home: React.createElement(Home, null),
 	    upcoming: React.createElement(Upcoming, null),
-	    about: React.createElement(About, null),
+	    donate: React.createElement(Donate, null),
 	    contact: React.createElement(Contact, null),
-	    donate: React.createElement(Donate, null)
+	    company: React.createElement(Company, null),
+	    team: React.createElement(Team, null)
 	  },
 	
 	  getInitialState: function () {
@@ -76,7 +78,7 @@
 	  render: function () {
 	    return React.createElement(
 	      'div',
-	      null,
+	      { className: 'site' },
 	      React.createElement(Header, { switchPane: this._switchPane }),
 	      this.contentPanes[this.state.activePane],
 	      React.createElement(Footer, null)
@@ -9346,6 +9348,7 @@
 	 */
 	var EventInterface = {
 	  type: null,
+	  target: null,
 	  // currentTarget is set when dispatching; no use in copying it here
 	  currentTarget: emptyFunction.thatReturnsNull,
 	  eventPhase: null,
@@ -9379,8 +9382,6 @@
 	  this.dispatchConfig = dispatchConfig;
 	  this.dispatchMarker = dispatchMarker;
 	  this.nativeEvent = nativeEvent;
-	  this.target = nativeEventTarget;
-	  this.currentTarget = nativeEventTarget;
 	
 	  var Interface = this.constructor.Interface;
 	  for (var propName in Interface) {
@@ -9391,7 +9392,11 @@
 	    if (normalize) {
 	      this[propName] = normalize(nativeEvent);
 	    } else {
-	      this[propName] = nativeEvent[propName];
+	      if (propName === 'target') {
+	        this.target = nativeEventTarget;
+	      } else {
+	        this[propName] = nativeEvent[propName];
+	      }
 	    }
 	  }
 	
@@ -13240,7 +13245,10 @@
 	      }
 	    });
 	
-	    nativeProps.children = content;
+	    if (content) {
+	      nativeProps.children = content;
+	    }
+	
 	    return nativeProps;
 	  }
 	
@@ -18713,7 +18721,7 @@
 	
 	'use strict';
 	
-	module.exports = '0.14.6';
+	module.exports = '0.14.7';
 
 /***/ },
 /* 147 */
@@ -19693,7 +19701,46 @@
 	var Header = React.createClass({
 	  displayName: "Header",
 	
+	  getInitialState: function () {
+	    return { dropdown: false };
+	  },
+	
+	  displayDropdown: function () {
+	    this.setState({ dropdown: true });
+	  },
+	
+	  hideDropdown: function () {
+	    this.setState({ dropdown: false });
+	  },
+	
 	  render: function () {
+	    var dropdown = "";
+	    if (this.state.dropdown) {
+	      dropdown = React.createElement(
+	        "ul",
+	        { className: "dropdown" },
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
+	            { onClick: this.props.switchPane.bind(null, "company") },
+	            "company"
+	          )
+	        ),
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
+	            { onClick: this.props.switchPane.bind(null, "team") },
+	            "team"
+	          )
+	        )
+	      );
+	    }
+	    // <li key={"upcoming"}><a onClick={this.props.switchPane.bind(null, "upcoming")}>upcoming</a></li>
+	    // <li key={"donate"}><a onClick={this.props.switchPane.bind(null, "donate")}>donate</a></li>
 	    return React.createElement(
 	      "header",
 	      null,
@@ -19712,17 +19759,46 @@
 	        React.createElement(
 	          "ul",
 	          { className: "nav-links group" },
-	          ["upcoming", "about", "contact", "donate"].map(function (link) {
-	            return React.createElement(
-	              "li",
-	              { key: link },
-	              React.createElement(
-	                "a",
-	                { onClick: this.props.switchPane.bind(null, link) },
-	                link
-	              )
-	            );
-	          }.bind(this))
+	          React.createElement(
+	            "li",
+	            { key: "upcoming" },
+	            React.createElement(
+	              "a",
+	              { onClick: this.props.switchPane.bind(null, "upcoming") },
+	              "upcoming"
+	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            { key: "about",
+	              className: "dropdown-parent",
+	              onMouseEnter: this.displayDropdown,
+	              onMouseLeave: this.hideDropdown },
+	            React.createElement(
+	              "a",
+	              null,
+	              "about"
+	            ),
+	            dropdown
+	          ),
+	          React.createElement(
+	            "li",
+	            { key: "contact" },
+	            React.createElement(
+	              "a",
+	              { onClick: this.props.switchPane.bind(null, "contact") },
+	              "contact"
+	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            { key: "donate" },
+	            React.createElement(
+	              "a",
+	              { onClick: this.props.switchPane.bind(null, "donate") },
+	              "donate"
+	            )
+	          )
 	        )
 	      )
 	    );
@@ -19751,7 +19827,7 @@
 	        "Like what you see? ",
 	        React.createElement(
 	          "a",
-	          { href: "mailto:twoheadedmonster.theater@gmail.com?subject=mailing list" },
+	          { href: "mailto:twoheadedrep@gmail.com?subject=mailing list" },
 	          "Sign up for our mailing list"
 	        ),
 	        " to be notified about future events!"
@@ -19768,7 +19844,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var TicketLink = __webpack_require__(166);
+	var TicketLink = __webpack_require__(162);
 	
 	var Home = React.createClass({
 	  displayName: 'Home',
@@ -19795,7 +19871,7 @@
 	          null,
 	          'April 1-3',
 	          React.createElement('br', null),
-	          'The A******* Theater'
+	          'The Gallery at Access Theater'
 	        ),
 	        React.createElement(
 	          'p',
@@ -19804,19 +19880,13 @@
 	          React.createElement('br', null),
 	          'Amanda Keating',
 	          React.createElement('br', null),
-	          'and Aeschylus (by way of Anne Carson)'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'and other happenings on the theme of strange brother/sister relationships.'
+	          'and Sophocles'
 	        ),
 	        React.createElement(
 	          'p',
 	          null,
 	          'Come eat, drink, and discuss.'
-	        ),
-	        React.createElement(TicketLink, null)
+	        )
 	      )
 	    );
 	  }
@@ -19830,7 +19900,28 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var TicketLink = __webpack_require__(166);
+	
+	var TicketLink = React.createClass({
+	  displayName: "TicketLink",
+	
+	  render: function () {
+	    return React.createElement(
+	      "a",
+	      { href: "#", className: "ticket-link" },
+	      "BUY TICKETS"
+	    );
+	  }
+	
+	});
+	
+	module.exports = TicketLink;
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var TicketLink = __webpack_require__(162);
 	
 	var Upcoming = React.createClass({
 	  displayName: 'Upcoming',
@@ -19845,14 +19936,23 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          'WE ARE DOING A REP THING!!!'
+	          'RETREAT/Electra'
 	        ),
 	        React.createElement(
 	          'h2',
 	          null,
-	          'Dates/Location/Whatevs'
+	          'April 1-3, 2016'
 	        ),
-	        React.createElement(TicketLink, null)
+	        React.createElement(
+	          'h2',
+	          null,
+	          'The Gallery at Access Theatre'
+	        ),
+	        React.createElement(
+	          'h2',
+	          null,
+	          '380 Broadway'
+	        )
 	      ),
 	      React.createElement(
 	        'section',
@@ -19860,7 +19960,7 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          'The New Play'
+	          'RETREAT'
 	        ),
 	        React.createElement(
 	          'h2',
@@ -19875,7 +19975,7 @@
 	        React.createElement(
 	          'p',
 	          null,
-	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+	          'Featuring Caitlin Morris, Lizzie Fox, Bonnie Antosh, Ned Riseley and Max Reinhardsen.'
 	        )
 	      ),
 	      React.createElement(
@@ -19884,31 +19984,60 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          'The Old Play'
+	          'Electra'
 	        ),
 	        React.createElement(
 	          'h2',
 	          null,
-	          'by Somebody Else'
+	          'by Sophocles'
 	        ),
 	        React.createElement(
 	          'h2',
 	          null,
-	          'directed by Lily Riopelle'
+	          'adapted and directed by Lily Riopelle'
+	        ),
+	        React.createElement(
+	          'h2',
+	          null,
+	          'with music by Frankie Simms'
 	        ),
 	        React.createElement(
 	          'p',
 	          null,
-	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+	          'Featuring Sarah Chalfie, Emma Orme, Natalie Rich, Leon Axt, Zach Fike Hodges, and Matthew Tiemstra.'
+	        )
+	      ),
+	      React.createElement(
+	        'ul',
+	        { className: 'designers' },
+	        React.createElement(
+	          'li',
+	          null,
+	          'Set Design: Cate McCrea'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Light and Costume Design: Cheyenne Sykes'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Sound Design: Val Monfeuga'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Assistant Director: Katie Falter'
 	        )
 	      ),
 	      React.createElement(
 	        'section',
-	        null,
+	        { className: 'events' },
 	        React.createElement(
 	          'h1',
 	          null,
-	          'The Other Stuff'
+	          'Other Events'
 	        ),
 	        React.createElement(
 	          'ul',
@@ -19916,17 +20045,26 @@
 	          React.createElement(
 	            'li',
 	            null,
-	            'Some Music happening at a time'
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sunday, April 3 @ 12:30PM',
+	              React.createElement('br', null),
+	              React.createElement(
+	                'span',
+	                { style: { fontStyle: "italic" } },
+	                'All Hallows Eve At the Amarillo Jehovah’s Witness Weekly Grief Group In the Backroom of the Y Just Off the Feeder'
+	              ),
+	              React.createElement('br', null),
+	              'written by Molly Beach Murphy, directed by Nikki DiLoreto'
+	            )
 	          ),
 	          React.createElement(
 	            'li',
 	            null,
-	            'A Talkback happening at another time'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'etc'
+	            'Sunday, April 3 @ 7:30PM',
+	            React.createElement('br', null),
+	            'PARTY at Access! Stay tuned for details.'
 	          )
 	        )
 	      )
@@ -19938,13 +20076,13 @@
 	module.exports = Upcoming;
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
 	
-	var About = React.createClass({
-	  displayName: "About",
+	var Company = React.createClass({
+	  displayName: "Company",
 	
 	  render: function () {
 	    return React.createElement(
@@ -19961,7 +20099,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	          "Two Headed Monster curates strategic pairings of new and canonical plays and produces them in repertory. We commit to a deep exploration of the points of connection between the works we present, as well as a meaningful investigation of their differences. We open a dialogue between old and new, and invite our audiences and fellow artists to participate."
 	        )
 	      ),
 	      React.createElement(
@@ -19975,9 +20113,39 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	          "It starts with the plays.  We might fall in love with a playwright, and commission them to write something in response to a play that resonates with them. We might choose a classic piece and then ask a playwright to write something to pair with it.  Maybe we come across a new play we adore, and can't shake the feeling that it has something new to say about a canonical piece.  Whatever the process, the result is the same: a pair of stellar plays."
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "The next phase is discovery.  As we dive in to working on each play as its own entity, we ask: what do we learn about these plays when we place them side by side that we might never have noticed doing each of them alone?  What conversation do the plays seem to be having?  In the space between the two pieces, we start to see a constellation form."
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "The last phase is dialogue with other artists and with our audience.  We invite artists working in many disciplines to participate in our repertory festivals, contributing to the conversation between our plays with works that illuminate, question, complicate, or celebrate the connection that the plays share.  Admission to all of these events is included in the price of a repertory ticket.  We want our audiences to stay a while, and join the conversation."
 	        )
-	      ),
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = Company;
+
+/***/ },
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	
+	var Team = React.createClass({
+	  displayName: "Team",
+	
+	  render: function () {
+	    return React.createElement(
+	      "main",
+	      { className: "about group" },
 	      React.createElement(
 	        "section",
 	        null,
@@ -19997,7 +20165,7 @@
 	              null,
 	              "Molly Clifford"
 	            ),
-	            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	            "Molly Clifford is a New York based director focused on new works.  She attended Connecticut College and the National Theater Institute at the Eugene O’Neill Theater Center.  NYC Directing: UglyRhino Productions, RAL Productions, the New York Musical Theater Festival, All For One and the world premiere of Anna Fox’s The Elephant in the Room (NY Fringe). Assisting: Classic Stage, Playwrights Realm, Berkshire Theater Group, Heartbeat Opera, The Play Company, Vineyard Theatre, Cherry Lane and Yale Rep.  Molly is currently developing Soldier with All For One Theater Company and Amanda Keating's GO THAT WAY."
 	          ),
 	          React.createElement(
 	            "section",
@@ -20007,7 +20175,7 @@
 	              null,
 	              "Lily Riopelle"
 	            ),
-	            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	            "Lily is a director and producer originally from and currently based in NYC. Her directorial credits range from site-specific reimaginings of canonical texts to developmental readings and first productions of new plays. Recent NYC credits include work with Tiny Rhino and Sanguine Theatre Company. As an assistant director, Lily has worked with companies including Woodshed Collective, 2g, and Superhero Clubhouse. She is a proud alumna of the National Theatre Institute's Advanced Directing Program and of Williams College.  She is currently developing Lizzie Stern's LET'S GET READY TOGETHER."
 	          )
 	        )
 	      )
@@ -20016,10 +20184,10 @@
 	
 	});
 	
-	module.exports = About;
+	module.exports = Team;
 
 /***/ },
-/* 164 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -20040,10 +20208,13 @@
 	        "If you're interested in what we're doing and want to get involved, or if you just want to hear more, reach out!  We'd love to chat.",
 	        React.createElement("br", null),
 	        React.createElement("br", null),
+	        "We're especially interested in meeting playwrights who like what we do and want to collaborate!",
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        "The best way to get in touch is to ",
 	        React.createElement(
 	          "a",
-	          { href: "mailto:twoheadedmonster.theater@gmail.com?subject=reaching out" },
+	          { href: "mailto:twoheadedrep@gmail.com?subject=reaching out" },
 	          "email"
 	        ),
 	        " us."
@@ -20056,7 +20227,7 @@
 	module.exports = Contact;
 
 /***/ },
-/* 165 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -20074,18 +20245,23 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "This is where we would talk about people giving us money, maybe via Fractured Atlas."
+	          "Two Headed Monster is a sponsored project of Fractured Atlas, a non-profit arts service organization.  Contributions for the charitable purposes of Two Headed Monster must be made payable to “Fractured Atlas” only and are tax-deductible to the extent permitted by law."
 	        ),
 	        React.createElement(
 	          "p",
 	          null,
-	          "And maybe we would also say something like: If you want to support us but are not in a position to donate, you can still help!  Reach out to us ",
+	          "To make a donation, ",
 	          React.createElement(
 	            "a",
-	            { href: "#" },
-	            "here"
+	            { href: "http://www.fracturedatlas.org/site/fiscal/profile?id=13891" },
+	            "click here"
 	          ),
-	          " to discuss ways you can get involved."
+	          "."
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "THANK YOU!"
 	        )
 	      )
 	    );
@@ -20094,27 +20270,6 @@
 	});
 	
 	module.exports = Contact;
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-	
-	var TicketLink = React.createClass({
-	  displayName: "TicketLink",
-	
-	  render: function () {
-	    return React.createElement(
-	      "a",
-	      { href: "#", className: "ticket-link" },
-	      "BUY TICKETS"
-	    );
-	  }
-	
-	});
-	
-	module.exports = TicketLink;
 
 /***/ }
 /******/ ]);
