@@ -14,6 +14,14 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.site {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 img {
   display: block;
   width: 100%;
@@ -50,44 +58,74 @@ header {
 
 .header-nav {
   height: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
 .header-nav .logo {
-  float: left;
+  /*float: left;
+  font-weight: bold;*/
   font-weight: bold;
+  margin: auto;
+  width: 800px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 35px;
 }
 
 .nav-links {
-  float: right;
+  /*float: right;*/
+  margin: auto;
+  width: 418px;
+  margin-top: 20px;
 }
 
 .nav-links li {
   float: left;
+  height: 100%;
 }
 
 .header-nav a {
   display: block;
   padding: 10px 20px;
   text-transform: uppercase;
+  /*color: #333333;*/
+}
+
+.header-nav {
+  /*color: #333333;*/
 }
 
 .header-nav a:hover {
-  background: yellow;
+  /*color: black;*/
+  font-weight: bold;
+}
+
+.dropdown a:hover {
+  font-weight: bold;
+}
+
+.dropdown-parent .dropdown {
+  display: none;
+}
+
+.dropdown-parent:hover .dropdown {
+  display: block;
 }
 
 main {
   background: white;
   box-sizing: border-box;
-  max-width: 800px;
-  padding: 20px;
-  min-height: 450px;
-  margin: auto;
+  max-width: 850px;
+  margin: 50px auto;
 }
 
 
-main p:not(:first-child) {
+main p {
   margin-top: 20px;
 }
 
@@ -115,7 +153,7 @@ footer {
 
 footer p {
   margin: auto;
-  width: 800px;
+  width: 900px;
   padding: 10px 20px;
   text-align: center;
   box-sizing: border-box;
@@ -159,19 +197,6 @@ main section:last-child {
   font-size: 24px;
 }
 
-.ticket-link {
-  padding: 10px 20px;
-  border: 5px solid black;
-  display: block;
-  width: 110px;
-  font-size: 16px;
-  margin: 10px auto;
-}
-
-.ticket-link:hover {
-  background: #eee;
-}
-
 .front-page h1 {
   font-size: 60px;
 }
@@ -182,10 +207,6 @@ main section:last-child {
 
 .front-page {
   font-size: 20px;
-}
-
-.front-page .ticket-link {
-  margin: 20px 0;
 }
 
 .dropdown-parent {
@@ -214,4 +235,179 @@ main section:last-child {
 
 .events li {
   margin-top: 20px;
+}
+
+.show-details {
+  margin-bottom: 50px;
+}
+
+.credits {
+  margin-bottom: 20px;
+}
+
+.credits p {
+  margin: 0;
+}
+
+.carousel img {
+  width: auto;
+  height: auto;
+  min-width: 850px;
+  min-height: 500px;
+}
+
+/*.carousel {
+  background: red;
+}*/
+
+/*#artfully-alert {
+  display:none
+}
+
+#artfully-event {
+  width: 850px;
+  margin: 20px auto;
+}
+
+.event-name, .event-producer {
+  display: none
+}
+
+.performance {
+  padding:0.5em 0.25em;
+  margin:0.5em 0;
+  color:#666666;
+  border-bottom:1px solid #cccccc;
+  position:relative
+}
+
+.performance .ticket-search{
+  position:absolute;
+  right:0.25em
+}
+
+ul {
+  list-style-type:none
+}
+
+.ticket-types li {
+  padding:1em
+}
+
+.ticket-types .ticket-type-name {
+  font-size:1.25em;line-height:1.5em
+}
+
+.ticket-types .ticket-type-price{
+  -moz-border-radius:4px 4px 4px 4px;
+  -webkit-border-radius:4px 4px 4px 4px;
+  border-radius:4px 4px 4px 4px;
+  font-weight:bold;
+  background:#eeeeee;
+  padding:0.5em;
+  margin-right:1em;
+  float:left;
+  font-size:0.8em
+}
+
+.ticket-types form {
+  margin:1em 0
+}
+
+#shopping-cart {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(255,255,255,0.9)
+}
+
+#shopping-cart-controls {
+  color:white;
+  padding:10px 5px 10px 27px;
+  cursor:pointer;
+  font-size:0.9em;
+  font-family:Arial;
+  -moz-border-radius:10px 10px 0px 0px;
+  -webkit-border-radius:10px 10px 0px 0px;
+  right:0;width:300px
+}
+
+#shopping-cart.shown #shopping-cart-controls {
+  background:#333 url("/assets/icons/down_arrow.png")
+  no-repeat 10px center
+}
+
+#shopping-cart.hidden #shopping-cart-controls {
+  background:#333 url("/assets/icons/up_arrow.png") no-repeat 10px center
+}
+
+#shopping-cart-controls .timer {
+  float:right
+}
+
+#shopping-cart iframe{width:100%}.ticket_count{margin-right:5px}.preset-amount{float:left;width:100px;margin-bottom:10px}
+
+#donation p {
+  margin-top: 20px;
+}
+
+#donation form {
+  width: 500px;
+  height: 130px;
+  margin: 20px auto;
+  border: 8px solid black;
+  position: relative;
+}
+
+#donation form input[type=text] {
+  width: 80%;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+#donation form input[type=submit] {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 20px;
+}*/
+
+.friend {
+  width: 225px;
+  height: 225px;
+  background: #eee;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: left;
+  z-index: 0;
+}
+
+.friend:hover {
+  background: #aaa;
+  font-weight: normal;
+}
+
+.friend .details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);;
+}
+
+.thank-you {
+  font-size: 138px;
+  text-align: center;
+  font-weight: bold;
 }

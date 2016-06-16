@@ -8,7 +8,7 @@ var Company = React.createClass({
         <section className="mission">
           <h1>Mission</h1>
           <p>
-            Two Headed Monster curates strategic pairings of new and canonical plays and produces them in repertory.
+            Two Headed Rep curates strategic pairings of new and canonical plays and produces them in repertory.
 
             We commit to a deep exploration of the points of connection between the works we present, as well as a meaningful investigation of their differences.
 

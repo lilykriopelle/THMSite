@@ -7,25 +7,7 @@ var Home = React.createClass({
     return (
       <main className="group">
         <section className="front-page">
-          <h1>Two Headed Monster</h1>
-          <h2>rears its ugly heads</h2>
-
-          <p>
-            April 1-3
-            <br/>
-            The Gallery at Access Theater
-          </p>
-
-          <p>
-            featuring works by
-            <br/>
-            Amanda Keating
-            <br/>
-            and Sophocles
-          </p>
-          <p>
-            Come eat, drink, and discuss.
-          </p>
+          <img src="images/retreat_electra_collage.jpg"/>
         </section>
       </main>
     );

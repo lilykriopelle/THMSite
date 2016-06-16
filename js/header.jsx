@@ -2,42 +2,41 @@ var React = require('react');
 
 var Header = React.createClass({
 
-  getInitialState: function () {
-    return { dropdown: false };
+  aboutDropdown: function () {
+    // <li><a onClick={this.props.switchPane.bind(null, "friends")}>friends</a></li>
+    return (
+      <ul className="dropdown">
+        <li><a onClick={this.props.switchPane.bind(null, "company")}>company</a></li>
+        <li><a onClick={this.props.switchPane.bind(null, "team")}>team</a></li>
+      </ul>
+    );
   },
 
-  displayDropdown: function () {
-    this.setState({ dropdown: true });
-  },
-
-  hideDropdown: function () {
-    this.setState({ dropdown: false });
+  showDropdown: function () {
+    return (
+        <ul className="dropdown">
+        <li><a onClick={this.props.switchPane.bind(null, "retreat")}>retreat</a></li>
+          <li><a onClick={this.props.switchPane.bind(null, "electra")}>electra</a></li>
+        </ul>
+      );
   },
 
   render: function() {
-    var dropdown = "";
-    if (this.state.dropdown) {
-      dropdown = (
-        <ul className="dropdown">
-          <li><a onClick={this.props.switchPane.bind(null, "company")}>company</a></li>
-          <li><a onClick={this.props.switchPane.bind(null, "team")}>team</a></li>
-        </ul>
-      );
-    }
-    // <li key={"upcoming"}><a onClick={this.props.switchPane.bind(null, "upcoming")}>upcoming</a></li>
-    // <li key={"donate"}><a onClick={this.props.switchPane.bind(null, "donate")}>donate</a></li>
     return (
       <header>
         <nav className="group header-nav">
-          <h1 className="logo"><a onClick={this.props.switchPane.bind(null, "home")}>two headed monster</a></h1>
+          <h1 className="logo"><a onClick={this.props.switchPane.bind(null, "home")}>two headed rep</a></h1>
+          <p className="tagline">creating a new canon</p>
           <ul className="nav-links group">
-            <li key={"upcoming"}><a onClick={this.props.switchPane.bind(null, "upcoming")}>upcoming</a></li>
             <li key={"about"}
-                className="dropdown-parent"
-                onMouseEnter={this.displayDropdown}
-                onMouseLeave={this.hideDropdown}>
+                className="dropdown-parent">
                 <a>about</a>
-                {dropdown}
+                {this.aboutDropdown()}
+            </li>
+            <li key={"shows"}
+                className="dropdown-parent">
+                <a>shows</a>
+                {this.showDropdown()}
             </li>
             <li key={"contact"}><a onClick={this.props.switchPane.bind(null, "contact")}>contact</a></li>
             <li key={"donate"}><a onClick={this.props.switchPane.bind(null, "donate")}>donate</a></li>
