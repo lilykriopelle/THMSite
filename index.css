@@ -80,7 +80,7 @@ header {
 .nav-links {
   /*float: right;*/
   margin: auto;
-  width: 418px;
+  width: 438px;
   margin-top: 20px;
 }
 
@@ -102,7 +102,8 @@ header {
 
 .header-nav a:hover {
   /*color: black;*/
-  font-weight: bold;
+  /*font-weight: bold;*/
+  background: yellow;
 }
 
 .dropdown a:hover {
@@ -127,14 +128,16 @@ main {
 
 main p {
   margin-top: 20px;
+  text-align: justify;
 }
 
-main a, footer a {
+.contact a, .donate a, footer a {
   font-weight: 600;
+  padding: 3px;
 }
 
-main a:hover, footer a:hover {
-  font-weight: bold;
+.contact a:hover, .donate a:hover, footer a:hover {
+  background: yellow;
 }
 
 .left {
@@ -227,6 +230,47 @@ main section:last-child {
 
 .dropdown a {
   font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.show-thumb {
+  width: 400px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.show-thumb .overlay {
+  display: none;
+  color: white;
+  font-weight: bold;
+  background: rgba(255,255,255,.18);
+  display: none;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.show-thumb:hover .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .designers {
@@ -410,4 +454,38 @@ ul {
   font-size: 138px;
   text-align: center;
   font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
+.shows li {
+  margin-bottom: 20px;
+}
+
+.about h1, .shows li {
+  font-size: 39px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about h1:hover, .shows li:hover {
+  background: yellow;
+  cursor: pointer;
+}
+
+#mc_embed_signup {
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+.highlight-link {
+  font-weight: bold;
+  padding: 3px;
+}
+
+.highlight-link:hover {
+  background: yellow;
 }

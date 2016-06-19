@@ -26,12 +26,25 @@ var Retreat = React.createClass({
               <p>Scenic Design by Cate McCrea</p>
               <p>Lighting and Costume Design by Cheyenne Sykes</p>
               <p>Sound Design by Valentine Monfeuga</p>
+              <p>Assistant Directed by Katie Falter</p>
               <p>Photos by Molly Clifford</p>
             </div>
           </div>
-          <div className="credits" style={{textAlign: "center"}}>
-            Featuring Caitlin Morris, Lizzie Fox, Bonnie Antosh, Ned Riseley and Max Reinhardsen.
+          <div style={{marginBottom: 20, textAlign: "justify"}}>
+            23 writers (Susan and Barry couldn’t come) settle in for a weekend by the sea.  They expect walks on the beach, breakfast tacos, board games, and late nights in the hot tub, but on this unseasonably warm winter weekend they find something else.  You might say they’re boring (they’re not), and they might say they’re just trying to figure shit out, but anyone who really knows them would say they believe in bold choices and doing what they want.
           </div>
+
+          <div className="credits" style={{textAlign: "center"}}>
+            <div className="centered">
+              <h1>CAST</h1>
+              <div> Jan ........................................................................ Caitlin Morris </div>
+              <div> Nate ....................................................................... Ned Riseley </div>
+              <div> Amy ............................................................................. Lizzie Fox </div>
+              <div> Beth .................................................................. Bonnie Antosh </div>
+              <div> Gary ............................................................ Max Reinhardsen </div>
+            </div>
+          </div>
+
           <Carousel className="retreat-carousel" items={this.photoNames("retreat")}/>
         </section>
       </main>

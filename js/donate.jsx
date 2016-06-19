@@ -7,7 +7,7 @@ var Contact = React.createClass({
 
   render: function () {
     return (
-      <main className="group">
+      <main className="group donate">
         <section>
           <p>
             Two Headed Rep is a brand new company.  We are able to make work

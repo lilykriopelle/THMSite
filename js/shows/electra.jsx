@@ -26,11 +26,24 @@ var Electra = React.createClass({
               <p>Scenic Design by Cate McCrea</p>
               <p>Lighting and Costume Design by Cheyenne Sykes</p>
               <p>Sound Design by Valentine Monfeuga</p>
+              <p>Assistant Directed by Katie Falter</p>
               <p>Photos by Molly Clifford</p>
             </div>
           </div>
+          <div style={{marginBottom: 20, textAlign: "justify"}}>
+            Electra mourns the death of her father, murdered by her mother in the ultimate act of betrayal.  When her brother Orestes returns to avenge their father, the siblings take justice into their own hands.  A brand new adaptation of Sophocles' timeless story of revenge, this Electra asks us whether blood can ever really repay blood.
+          </div>
           <div className="credits" style={{textAlign: "center"}}>
-            Featuring Sarah Chalfie, Emma Orme, Natalie Rich, Leon Axt, Zach Fike Hodges, and Matthew Tiemstra.          </div>
+            <div className="centered">
+              <h1>CAST</h1>
+              <div> Electra ....................................................................... Sarah Chalfie </div>
+              <div> Chrysothemis ........................................................ Emma Orme </div>
+              <div> Clytemnestra ........................................................... Natalie Rich </div>
+              <div> Orestes ................................................................................ Leon Axt </div>
+              <div> Paedagogus/Aegisthus .................. Zach Fike Hodges </div>
+              <div> Pylades .........................................................  Matthew Tiemstra </div>
+            </div>
+          </div>
           <Carousel className="electra-carousel" items={this.photoNames("electra")}/>
         </section>
       </main>
