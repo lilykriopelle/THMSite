@@ -1,29 +1,15 @@
 var React = require('react');
-var Slider = require('react-slick');
+var Gallery = require('react-photo-gallery');
 
-var SimpleSlider = React.createClass({
+var PhotoGallery = React.createClass({
   render: function () {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 750,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      adaptiveHeight: false,
-      className: "carousel"
-    };
-
-    var images = this.props.items.map(function(imageName){
-      return <img key="imageName" src={imageName}/>;
-    });
-
     return (
-      <Slider {...settings}>
-        {images}
-      </Slider>
+      <Gallery
+        photos={this.props.items}
+        backdropClosesModal={true}
+      />
     );
   }
 });
 
-module.exports = SimpleSlider;
+module.exports = PhotoGallery;

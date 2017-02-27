@@ -1,4 +1,5 @@
 var React = require('react');
+var ShowPreview = require('../show_preview');
 
 var RetreatElectra = React.createClass({
 
@@ -32,22 +33,8 @@ var RetreatElectra = React.createClass({
           </p>
 
           <div className="group" style={{marginTop: 20}}>
-            <div className="show-thumb float-left">
-              <img src="images/retreat_images/retreat7.jpg"/>
-              <a href="/retreat" className="overlay">
-                <div style={{position: "absolute", bottom: 16, right: 20}}>
-                  RETREAT
-                </div>
-              </a>
-            </div>
-            <div className="show-thumb float-right" >
-              <img src="images/electra_images/electra10.jpeg"/>
-              <a href="/electra" className="overlay">
-                <div style={{position: "absolute", bottom: 16, right: 20}}>
-                ELECTRA
-                </div>
-              </a>
-            </div>
+            <ShowPreview classes={["float-left"]} title="RETREAT" imageUrl="images/retreat_images/retreat7.jpg" link="/retreat"/>
+            <ShowPreview classes={["float-right"]} title="ELECTRA" imageUrl="images/electra_images/electra10.jpeg" link="/electra"/>
           </div>
 
           <p>

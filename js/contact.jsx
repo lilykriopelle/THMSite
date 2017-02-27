@@ -18,7 +18,7 @@ var Contact = React.createClass({
           </p>
 
           <p>
-            The best way to get in touch is to <a className="highlight-link" href="mailto:twoheadedrep@gmail.com?subject=reaching out">email</a> us.
+            The best way to get in touch is to<a className="highlight-link" href="mailto:twoheadedrep@gmail.com?subject=reaching out">email</a>us.
           </p>
 
           <p>

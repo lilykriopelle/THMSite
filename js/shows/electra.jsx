@@ -1,15 +1,100 @@
 var React = require('react');
-var Carousel = require('../carousel.jsx');
+var Gallery = require('../carousel.jsx');
 
 var Electra = React.createClass({
 
-  photoNames: function (play) {
-    var photoNames = [];
-    for (var i = 1; i <= 10; i++) {
-      photoNames.push("images/electra_images/" + play + i + ".jpeg");
+  PHOTOSET: [
+    {
+      src: "images/electra_images/electra1.jpg",
+      width: 400,
+      height: 400,
+      aspectRatio: 1,
+      lightboxImage: {
+        src: "images/electra_images/electra1.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra2.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra2.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra3.jpg",
+      width: 400,
+      height: 600,
+      aspectRatio: 0.66,
+      lightboxImage: {
+        src: "images/electra_images/electra3.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra4.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra4.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra5.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra5.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra5.5.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra5.5.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra6.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra6.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra7.jpg",
+      width: 400,
+      height: 600,
+      aspectRatio: 0.66,
+      lightboxImage: {
+        src: "images/electra_images/electra7.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra8.jpg",
+      width: 400,
+      height: 600,
+      aspectRatio: 0.66,
+      lightboxImage: {
+        src: "images/electra_images/electra8.jpg"
+      }
+    },
+    {
+      src: "images/electra_images/electra9.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/electra_images/electra9.jpg"
+      }
     }
-    return photoNames;
-  },
+  ],
 
   render: function () {
     return (
@@ -44,7 +129,7 @@ var Electra = React.createClass({
               <div> Pylades .........................................................  Matthew Tiemstra </div>
             </div>
           </div>
-          <Carousel className="electra-carousel" items={this.photoNames("electra")}/>
+          <Gallery className="electra-carousel" items={this.PHOTOSET}/>
         </section>
       </main>
     );

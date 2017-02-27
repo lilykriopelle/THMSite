@@ -10,16 +10,8 @@ var Tickets = React.createClass({
     return (
       <main>
         <div>
-          <p>
-            Buy tickets to our inaugural rep of RETREAT/Electra!
-            Your ticket also grants you access to the other events
-            we are producing that weekend.
-          </p>
-          <div id='artfully-event'></div>
-
-          <div>
-            (If the ticketing widget is giving you trouble, you can purchase tickets directly <a href="https://www.artful.ly/store/events/8319">here</a>.)
-          </div>
+          <p className="centered" style={{fontSize: 60}}><a className="highlight-link" target="_blank" href="https://www.artful.ly/two-headed-monster">click here to buy tickets</a></p>
+          <p className="centered" style={{fontSize: 35}}>to Don't Make Yourself Crazy/TARTUFFE!</p>
         </div>
       </main>
     );

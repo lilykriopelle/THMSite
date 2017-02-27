@@ -16,13 +16,15 @@ var Contact = React.createClass({
             with one another.
           </p>
 
-          <p>
-            To make a donation, click <a href="http://www.fracturedatlas.org/site/fiscal/profile?id=13891"> here </a>.
+          <p className="donate-link">
+            <a href="http://www.fracturedatlas.org/site/fiscal/profile?id=13891">click here to make a donation</a>
           </p>
 
           <p>
             Two Headed Rep is a sponsored project of Fractured Atlas, a non-profit arts service organization.  Contributions for the charitable purposes of Two Headed Rep must be made payable to “Fractured Atlas” only and are tax-deductible to the extent permitted by law.
           </p>
+
+          <p>We also accept donations in kind!  Do you have access to a room we could rehearse in?  How about a printer we could use for our scripts and programs?  Scrap wood from your last DIY project?  It takes a lot of stuff to make a play, so before you throw something out, why not <a className="highlight-link" href="mailto:twoheadedrep@gmail.com?subject=potential donation">ask us</a> if we could use it?</p>
 
           <p className="thank-you">
             THANK YOU!

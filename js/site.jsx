@@ -5,21 +5,29 @@ var ReactDOM = require('react-dom');
 
 // COMPONENTS
 var Header = require('./header.jsx');
-var Footer = require('./footer.jsx');
 var Home = require('./home.jsx');
-var Upcoming = require('./upcoming.jsx');
-var Company = require('./company.jsx');
-var Team = require('./team.jsx');
-var Contact = require('./contact.jsx');
-var Donate = require('./donate.jsx');
-var Tickets = require('./tickets.jsx');
-var Electra = require('./shows/electra.jsx');
-var Retreat = require('./shows/retreat.jsx');
-var Friends = require('./friends.jsx');
+var Footer = require('./footer.jsx');
+
+// NAVIGATION
 var About = require('./about.jsx');
 var Shows = require('./shows.jsx');
+var Contact = require('./contact.jsx');
+var Donate = require('./donate.jsx');
+var Blog = require('./blog.jsx');
+
+// TEMPORARY
+var Tickets = require('./tickets.jsx');
+
+// FESTIVALS
 var RetreatElectra = require('./shows/retreat_electra.jsx');
-var UntitledTartuffe = require('./shows/untitled_tartuffe.jsx');
+var DMYCTartuffe = require('./shows/dmyc_tartuffe.jsx');
+var RestaurantLysistrata = require('./shows/restaurant_lysistrata.jsx');
+
+// PLAYS
+var Electra = require('./shows/electra.jsx');
+var Retreat = require('./shows/retreat.jsx');
+var DMYC = require('./shows/dmyc.jsx');
+var Tartuffe = require('./shows/tartuffe.jsx');
 
 // ROUTING
 var Router = require('react-router').Router;
@@ -32,8 +40,9 @@ var Site = React.createClass({
   render: function () {
     return (
       <div className="site">
-        <Header/>
+        <Header activeTab={this.props.location.pathname.slice(1)}/>
         { this.props.children }
+        <Footer/>
       </div>
     );
   }
@@ -50,9 +59,13 @@ $(function() {
         <Route path="contact" component={Contact}/>
         <Route path="donate" component={Donate}/>
         <Route path="retreat_electra" component={RetreatElectra}/>
-        <Route path="untitled_tartuffe" component={UntitledTartuffe}/>
+        <Route path="dmyc_tartuffe" component={DMYCTartuffe}/>
+        <Route path="restaurant_lysistrata" component={RestaurantLysistrata}/>
         <Route path="retreat" component={Retreat}/>
         <Route path="electra" component={Electra}/>
+        <Route path="dmyc" component={DMYC}/>
+        <Route path="tartuffe" component={Tartuffe}/>
+        <Route path="tickets" component={Tickets}/>
       </Route>
     </Router>
   );

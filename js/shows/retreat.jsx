@@ -1,15 +1,100 @@
 var React = require('react');
-var Carousel = require('../carousel.jsx');
+var Gallery = require('../carousel.jsx');
 
 var Retreat = React.createClass({
 
-  photoNames: function (play) {
-    var photoNames = [];
-    for (var i = 1; i <= 10; i++) {
-      photoNames.push("images/retreat_images/" + play + i + ".jpg");
+  PHOTOSET: [
+    {
+      src: "images/retreat_images/retreat1.jpg",
+      width: 200,
+      height: 375,
+      aspectRatio: 0.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat1.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat2.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat2.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat3.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat3.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat4.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat4.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat5.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat5.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat6.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat6.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat7.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat7.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat8.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat8.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat9.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat9.jpg"
+      }
+    },
+    {
+      src: "images/retreat_images/retreat10.jpg",
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
+      lightboxImage: {
+        src: "images/retreat_images/retreat10.jpg"
+      }
     }
-    return photoNames;
-  },
+  ],
 
   render: function () {
 
@@ -45,7 +130,7 @@ var Retreat = React.createClass({
             </div>
           </div>
 
-          <Carousel className="retreat-carousel" items={this.photoNames("retreat")}/>
+          <Gallery className="retreat-carousel" items={this.PHOTOSET}/>
         </section>
       </main>
     );

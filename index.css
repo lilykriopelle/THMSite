@@ -24,6 +24,17 @@ body {
 
 img {
   display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.show-thumb img, .front-page img, .header-nav img {
   width: 100%;
   height: auto;
 }
@@ -63,24 +74,37 @@ header {
 }
 
 .header-nav .logo {
-  /*float: left;
-  font-weight: bold;*/
-  font-weight: bold;
+  font-weight: normal;
   margin: auto;
   width: 800px;
   text-align: center;
   font-size: 80px;
+  margin: 20px auto;
 }
 
 .tagline {
-  text-align: center;
-  font-size: 35px;
+  text-align: right;
+  font-size: 27px;
+  font-style: italic;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.silver {
+  color: rgba(0,0,0,.2);
+}
+
+.no-select {
+  -webkit-user-select: none;
+  cursor: default;
 }
 
 .nav-links {
   /*float: right;*/
   margin: auto;
-  width: 438px;
+  /*width: 625px; with tickets*/
   margin-top: 20px;
 }
 
@@ -89,7 +113,7 @@ header {
   height: 100%;
 }
 
-.header-nav a {
+.nav-links a {
   display: block;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -97,12 +121,14 @@ header {
 }
 
 .header-nav {
-  /*color: #333333;*/
+  width: 521px;
+}
+
+.header-nav p {
+  width: 100%;
 }
 
 .header-nav a:hover {
-  /*color: black;*/
-  /*font-weight: bold;*/
   background: yellow;
 }
 
@@ -123,6 +149,7 @@ main {
   box-sizing: border-box;
   max-width: 850px;
   margin: 50px auto;
+  margin-bottom: 100px;
 }
 
 
@@ -147,11 +174,25 @@ main p {
 
 .right {
   float: right;
-  width: 459px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 footer {
-  border-top: 8px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background: rgba(255,255,255,.8)
 }
 
 footer p {
@@ -249,11 +290,11 @@ main section:last-child {
 .show-thumb .overlay {
   display: none;
   color: white;
-  font-weight: bold;
   background: rgba(255,255,255,.18);
   display: none;
   padding: 20px;
   font-size: 24px;
+  font-size: normal;
 }
 
 .show-thumb:hover .overlay {
@@ -291,6 +332,7 @@ main section:last-child {
 
 .credits p {
   margin: 0;
+  text-align: right;
 }
 
 .carousel img {
@@ -298,6 +340,16 @@ main section:last-child {
   height: auto;
   min-width: 850px;
   min-height: 500px;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.social:hover {
+  background: none;
 }
 
 /*.carousel {
@@ -465,9 +517,10 @@ ul {
 }
 
 .about h1, .shows li {
-  font-size: 39px;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 30px;
   text-align: center;
+  -webkit-user-select: none;
 }
 
 .about h1:hover, .shows li:hover {
@@ -478,7 +531,11 @@ ul {
 #mc_embed_signup {
   background:#fff;
   clear:left;
-  font:14px Helvetica,Arial,sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.highlight {
+  background: rgba(255,255,0,0.5);
 }
 
 .highlight-link {
@@ -488,4 +545,13 @@ ul {
 
 .highlight-link:hover {
   background: yellow;
+}
+
+.donate-link {
+  font-size: 60px;
+  text-align: center;
+}
+
+.donate-link a {
+  padding: 7px;
 }
