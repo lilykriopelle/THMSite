@@ -55,7 +55,7 @@ $(function() {
       <Route path="/" component={Site}>
         <IndexRoute component={Home}/>
         <Route path="about" component={About}/>
-        <Route path="festivals" component={Shows}/>
+        <Route path="shows" component={Shows}/>
         <Route path="contact" component={Contact}/>
         <Route path="donate" component={Donate}/>
         <Route path="retreat_electra" component={RetreatElectra}/>

@@ -121,7 +121,7 @@ header {
 }
 
 .header-nav {
-  width: 521px;
+  width: 498px;
 }
 
 .header-nav p {
@@ -149,7 +149,7 @@ main {
   box-sizing: border-box;
   max-width: 850px;
   margin: 50px auto;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 

@@ -45,12 +45,12 @@ var About = React.createClass({
             <div className = "group">
               <span className="person">
                 <h2>Molly Clifford – Co-Artistic Director</h2>
-                Molly Clifford is a New York based director focused on new works.  She attended Connecticut College and the National Theater Institute at the Eugene O’Neill Theater Center.  NYC Directing: UglyRhino Productions, RAL Productions, the New York Musical Theater Festival, All For One and the world premiere of Anna Fox’s The Elephant in the Room (NY Fringe). Assisting: Classic Stage, Playwrights Realm, Berkshire Theater Group, Heartbeat Opera, The Play Company, Vineyard Theatre, Cherry Lane and Yale Rep.  Molly is currently developing Soldier with All For One Theater Company and Amanda Keating's GO THAT WAY.
+                NYC Directing: TARTUFFE (Two Headed Rep), RETREAT (Two Headed Rep, EST/Youngblood), Soldier (All For One), The Elephant in the Room (NY Fringe).  Short plays and readings with EST/Youngblood, TinyRhino, 7x7. Assisting: Classic Stage, Playwrights Realm, The Play Company, Vineyard Theatre, EST, Cherry Lane and Yale Rep.  Alumna of the National Theater Institute and Connecticut College.
               </span>
 
               <span className="person">
                 <h2>Lily Riopelle – Co-Artistic Director</h2>
-                Lily is a director and producer originally from and currently based in NYC. Her directorial credits range from site-specific reimaginings of canonical texts to developmental readings and first productions of new plays. As an assistant director, Lily has worked with many companies in and around NYC, most recently as a member of the Williamstown Theatre Festival's Directing Corps. She is a proud alumna of the National Theatre Institute's Advanced Directing Program and of Williams College, where she studied Theatre and Computer Science.
+                Lily is a director and producer originally from and currently based in NYC. She has directed and assisted in NYC at institutions including Two Headed Rep, The Tank, Youngblood/EST, UglyRhino/TinyRhino, and Woodshed Collective, and regionally at the Williamstown Theatre Festival. She studied Theatre and Computer Science at Williams College, and is an alumna of the National Theatre Institute's Advanced Directing Program.
               </span>
             </div>
             <div className = "group" style={{marginTop: 20}}>

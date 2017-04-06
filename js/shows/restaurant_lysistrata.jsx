@@ -23,12 +23,13 @@ var UntitledTartuffe = React.createClass({
           </div>
 
           <div style={{marginTop: 20}}>
-            <div className="centered">April 28-May 7, 2017</div>
-            <div className="centered">Temporary Storage</div>
+            <div className="centered">April 29-May 7, 2017</div>
+            <div className="centered">Tuesday - Saturday at 7:30PM, Sunday at 2PM</div>
+            <div className="centered" style={{marginTop: 3}}><a className="highlight-link" href="http://temporarystorage.info" target="_blank">Temporary Storage</a></div>
           </div>
 
-          <div className="centered" style={{fontSize: 62, fontWeight: 600, marginTop: 50}}>
-            MORE INFO COMING SOON...
+          <div className="centered" style={{fontSize: 40, fontWeight: 600, marginTop: 50}}>
+            MORE INFO + TICKET LINK COMING SOON...
           </div>
         </section>
       </main>

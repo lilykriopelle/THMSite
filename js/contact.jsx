@@ -9,20 +9,12 @@ var Contact = React.createClass({
 
           <p>
             If you're interested in what we're doing and want to get involved, or if you
-            just want to hear more, reach out!  We'd love to chat.
+            just want to hear more, reach out!  We'd love to chat. We're especially interested in meeting playwrights and designers who like what we do
+            and want to collaborate! The best way to get in touch is to<a className="highlight-link" href="mailto:twoheadedrep@gmail.com?subject=reaching out">email</a>us.
           </p>
 
           <p>
-            We're especially interested in meeting playwrights and designers who like what we do
-            and want to collaborate!
-          </p>
-
-          <p>
-            The best way to get in touch is to<a className="highlight-link" href="mailto:twoheadedrep@gmail.com?subject=reaching out">email</a>us.
-          </p>
-
-          <p>
-            If you want to stay in the loop when we announce new projects and programs, subscribe to our mailing list!
+            Or, if you want to stay in the loop when we announce new projects and programs, subscribe to our mailing list by filling out the form below!
           </p>
 
           <div id="mc_embed_signup">

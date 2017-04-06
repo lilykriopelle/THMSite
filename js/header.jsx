@@ -23,7 +23,7 @@ var Header = React.createClass({
           </div>
           <ul className="nav-links group">
             <li><a className={this.highlightClass("about")} href="/about">about</a></li>
-            <li><a className={this.highlightClass("festivals")} href="/festivals">festivals</a></li>
+            <li><a className={this.highlightClass("shows")} href="/shows">shows</a></li>
             <li><a className={this.highlightClass("contact")} href="/contact">contact</a></li>
             <li><a className={this.highlightClass("donate")} href="/donate">donate</a></li>
             <li><a className={this.highlightClass("blog")} target="_blank" href="http://blog.twoheadedrep.com">blog</a></li>
