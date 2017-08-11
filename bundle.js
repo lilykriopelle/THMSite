@@ -74,6 +74,8 @@
 	var Retreat = __webpack_require__(313);
 	var DMYC = __webpack_require__(314);
 	var Tartuffe = __webpack_require__(315);
+	var Lysistrata = __webpack_require__(316);
+	var Restaurant = __webpack_require__(317);
 	
 	// ROUTING
 	var Router = __webpack_require__(34).Router;
@@ -115,6 +117,8 @@
 	      React.createElement(Route, { path: 'electra', component: Electra }),
 	      React.createElement(Route, { path: 'dmyc', component: DMYC }),
 	      React.createElement(Route, { path: 'tartuffe', component: Tartuffe }),
+	      React.createElement(Route, { path: 'lysistrata', component: Lysistrata }),
+	      React.createElement(Route, { path: 'restaurant', component: Restaurant }),
 	      React.createElement(Route, { path: 'tickets', component: Tickets })
 	    )
 	  );
@@ -27036,7 +27040,7 @@
 	var Home = React.createClass({
 	  displayName: 'Home',
 	
-	  render: function () {
+	  noShow: function () {
 	    var settings = {
 	      dots: false,
 	      infinite: true,
@@ -27046,26 +27050,36 @@
 	      autoplay: true
 	    };
 	    return React.createElement(
+	      'div',
+	      { style: { width: '80%', margin: 'auto' } },
+	      React.createElement(
+	        Slider,
+	        settings,
+	        React.createElement('img', { src: 'images/restaurant_images/restaurant1.jpg' }),
+	        React.createElement('img', { src: 'images/lysistrata_images/lysistrata1.jpg' }),
+	        React.createElement('img', { src: 'images/dmyc_images/dmyc_2.jpg' }),
+	        React.createElement('img', { src: 'images/tartuffe_images/tartuffe1.jpg' }),
+	        React.createElement('img', { src: 'images/restaurant_images/restaurant8.jpg' }),
+	        React.createElement('img', { src: 'images/lysistrata_images/lysistrata7.jpg' }),
+	        React.createElement('img', { src: 'images/dmyc_images/dmyc_6.jpg' }),
+	        React.createElement('img', { src: 'images/tartuffe_images/tartuffe8.jpg' })
+	      ),
+	      React.createElement(
+	        'div',
+	        { className: 'silver right', style: { fontSize: 16 } },
+	        'Photos 1, 2, 5 and 6 by Ashley Garrett. Photos 3, 4, 7, and 8 by Evan Zimmerman'
+	      )
+	    );
+	  },
+	
+	  render: function () {
+	    return React.createElement(
 	      'main',
 	      { className: 'group' },
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        React.createElement(
-	          Slider,
-	          settings,
-	          React.createElement('img', { src: 'images/dmyc_images/dmyc_2.jpg' }),
-	          React.createElement('img', { src: 'images/tartuffe_images/tartuffe1.jpg' }),
-	          React.createElement('img', { src: 'images/dmyc_images/dmyc_6.jpg' }),
-	          React.createElement('img', { src: 'images/tartuffe_images/tartuffe8.jpg' }),
-	          React.createElement('img', { src: 'images/dmyc_images/dmyc_10.jpg' }),
-	          React.createElement('img', { src: 'images/tartuffe_images/tartuffe10.jpg' })
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'silver right' },
-	          'Photos by Evan Zimmerman'
-	        )
+	        this.noShow()
 	      )
 	    );
 	  }
@@ -29818,7 +29832,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Two Headed Rep is a brand new company.  We are able to make work thanks to the generosity of people like you! Your donations help us achieve our goal of creating accessible, cheap theatrical events that bring old and new plays into conversation with one another."
+	          "Two Headed Rep is able to make work thanks to the generosity of people like you! Your donations help us achieve our goal of creating accessible theatrical events that bring old and new plays into conversation with one another."
 	        ),
 	        React.createElement(
 	          "p",
@@ -29828,6 +29842,11 @@
 	            { href: "http://www.fracturedatlas.org/site/fiscal/profile?id=13891" },
 	            "click here to make a donation"
 	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Alternatively, you can make a check out to Fractured Atlas, put 'Two Headed Rep' in the memo, and send it to the Fractured Atlas offices (located at 248 West 35th Street, 10th Floor, New York, NY 10001)."
 	        ),
 	        React.createElement(
 	          "p",
@@ -30097,13 +30116,13 @@
 	            { style: { float: "right", textAlign: "right" } },
 	            React.createElement(
 	              'div',
-	              { style: { fontWeight: "bold" } },
-	              'TARTUFFE'
-	            ),
-	            React.createElement(
-	              'div',
 	              null,
-	              'by Molière'
+	              'Molière\'s ',
+	              React.createElement(
+	                'span',
+	                { style: { fontWeight: "bold" } },
+	                'TARTUFFE'
+	              )
 	            ),
 	            React.createElement(
 	              'div',
@@ -30157,8 +30176,8 @@
 	var React = __webpack_require__(1);
 	var ShowPreview = __webpack_require__(262);
 	
-	var UntitledTartuffe = React.createClass({
-	  displayName: 'UntitledTartuffe',
+	var RestaurantLysistrata = React.createClass({
+	  displayName: 'RestaurantLysistrata',
 	
 	  render: function () {
 	    return React.createElement(
@@ -30194,13 +30213,13 @@
 	            { style: { float: "right", textAlign: "right" } },
 	            React.createElement(
 	              'div',
-	              { style: { fontWeight: "bold" } },
-	              'Lysistrata'
-	            ),
-	            React.createElement(
-	              'div',
 	              null,
-	              'by Aristophanes'
+	              'Aristophanes\' ',
+	              React.createElement(
+	                'span',
+	                { style: { fontWeight: "bold" } },
+	                'Lysistrata'
+	              )
 	            ),
 	            React.createElement(
 	              'div',
@@ -30210,7 +30229,7 @@
 	            React.createElement(
 	              'div',
 	              null,
-	              'with music by Cody Owen Stine'
+	              'with songs by Cody Owen Stine'
 	            )
 	          )
 	        ),
@@ -30224,12 +30243,8 @@
 	          ),
 	          React.createElement(
 	            'div',
-	            { className: 'centered' },
-	            'Tuesday - Saturday at 7:30PM, Sunday at 2PM'
-	          ),
-	          React.createElement(
-	            'div',
 	            { className: 'centered', style: { marginTop: 3 } },
+	            'at ',
 	            React.createElement(
 	              'a',
 	              { className: 'highlight-link', href: 'http://temporarystorage.info', target: '_blank' },
@@ -30239,8 +30254,34 @@
 	        ),
 	        React.createElement(
 	          'div',
-	          { className: 'centered', style: { fontSize: 40, fontWeight: 600, marginTop: 50 } },
-	          'MORE INFO + TICKET LINK COMING SOON...'
+	          { className: 'centered' },
+	          React.createElement(
+	            'p',
+	            null,
+	            'Featuring Lydian Blossom, Christina D. Eskridge, Kristian Espiritu*, Dawn Evans*, Lizzie Fox, Rachel B. Joyce, Devin Kawaoka*, Lizzie King-Hall*, Ying Ying Li*, Rachel Lin, David Littleton, Jacob Perkins*, Mallory Portnoy*, Tina Scariano*, Ramon Torres, Anne Troup*, and Matt Walker.'
+	          ),
+	          React.createElement(
+	            'p',
+	            { style: { textAlign: 'right', marginTop: 0 } },
+	            '*Denotes members of Actors Equity Association'
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'Set design by Cate McCrea, lighting design by Cheyenne Sykes, costume design by Nicole Slaven, sound design by Carsen Joenk, choreography by Liz Charky, and production management by Carl Whipple, Assistant Direction for ',
+	            React.createElement(
+	              'span',
+	              { className: 'italic' },
+	              'Lysistrata'
+	            ),
+	            ' by Helen Handelman, Stage Management by Helen Handelman and Maggie Snell.'
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'group', style: { marginTop: 20 } },
+	          React.createElement(ShowPreview, { classes: ["float-left"], title: 'RESTAURANT IN D MAJOR', imageUrl: 'images/restaurant_images/restaurant1.jpg', link: '/restaurant' }),
+	          React.createElement(ShowPreview, { classes: ["float-right"], title: 'LYSISTRATA', imageUrl: 'images/lysistrata_images/lysistrata1.jpg', link: '/lysistrata' })
 	        )
 	      )
 	    );
@@ -30248,7 +30289,7 @@
 	
 	});
 	
-	module.exports = UntitledTartuffe;
+	module.exports = RestaurantLysistrata;
 
 /***/ },
 /* 265 */
@@ -35379,6 +35420,488 @@
 	});
 	
 	module.exports = Tartuffe;
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Gallery = __webpack_require__(266);
+	
+	var Lysistrata = React.createClass({
+	  displayName: 'Lysistrata',
+	
+	  PHOTOSET: [{
+	    src: "images/lysistrata_images/lysistrata1.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata1.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata2.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata2.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata3.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata3.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata4.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata4.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata5.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata5.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata6.jpg",
+	    width: 300,
+	    height: 450,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata6.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata7.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata7.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata8.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata8.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata9.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata9.jpg"
+	    }
+	  }, {
+	    src: "images/lysistrata_images/lysistrata10.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/lysistrata_images/lysistrata10.jpg"
+	    }
+	  }],
+	
+	  render: function () {
+	
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'section',
+	        { className: 'show-details' },
+	        React.createElement(
+	          'div',
+	          { className: 'group' },
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "left", textAlign: "left" } },
+	            React.createElement(
+	              'h1',
+	              { style: { fontSize: "30" } },
+	              'Aristophanes\' Lysistrata'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'adapted and directed by Lily Riopelle'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'with songs by Cody Owen Stine'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "right", textAlign: "right" } },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Scenic Design by Cate McCrea'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Lighting Design by Cheyenne Sykes'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Costume Design by Nicole Slaven'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sound Design by Carsen Joenk'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Assistant Directed and Stage Managed by Helen Handelman'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Photos by Ashley Garrett'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { style: { marginBottom: 20, textAlign: "justify" } },
+	          'Fed up with a war that\'s tearing her world apart, Lysistrata leads the women of Greece in a rebellion against the status quo. Or at least, she will lead the women of Greece in a rebellion against the status quo just as soon as they show up to the meeting she worked super hard to organize (seriously, she\'s not messing around, she even brought snacks). Now if they\'d just stop their chit-chatting so she can reveal her grand plan...'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'credits', style: { textAlign: "center" } },
+	          React.createElement(
+	            'div',
+	            { className: 'centered' },
+	            React.createElement(
+	              'h1',
+	              null,
+	              'CAST'
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Lysistrata ........................................................................ Lizzie Fox '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Calonice ........................................................... Lizzie King-Hall* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Mhyrrine ............................................................ Rachel B. Joyce '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Ismenia ................................................................... Tina Scariano* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Kallyki ................................................................... Lydian Blossom '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Lampito .................................................... Christina D. Eskridge '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Kinesias ............................................................... Kristian Espiritu* '
+	            )
+	          )
+	        ),
+	        React.createElement(Gallery, { className: 'lysistrata-carousel', items: this.PHOTOSET })
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = Lysistrata;
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Gallery = __webpack_require__(266);
+	
+	var Restaurant = React.createClass({
+	  displayName: 'Restaurant',
+	
+	  PHOTOSET: [{
+	    src: "images/restaurant_images/restaurant1.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant1.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant2.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant2.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant3.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant3.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant4.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant4.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant5.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant5.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant6.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant6.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant7.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant7.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant8.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant8.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant9.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant9.jpg"
+	    }
+	  }, {
+	    src: "images/restaurant_images/restaurant10.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/restaurant_images/restaurant10.jpg"
+	    }
+	  }],
+	
+	  render: function () {
+	
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'section',
+	        { className: 'show-details' },
+	        React.createElement(
+	          'div',
+	          { className: 'group' },
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "left", textAlign: "left" } },
+	            React.createElement(
+	              'h1',
+	              { style: { fontSize: "30" } },
+	              'Restaurant in D Major'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'by Jacob Perkins'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'directed by Molly Clifford'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "right", textAlign: "right" } },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Scenic Design by Cate McCrea'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Lighting Design by Cheyenne Sykes'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Costume Design by Nicole Slaven'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sound Design by Carsen Joenk'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Stage Managed by Maggie Snell'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Photos by Ashley Garrett'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { style: { marginBottom: 20, textAlign: "justify" } },
+	          React.createElement(
+	            'div',
+	            null,
+	            '“Hello.'
+	          ),
+	          React.createElement(
+	            'div',
+	            null,
+	            'How are you?'
+	          ),
+	          React.createElement(
+	            'div',
+	            null,
+	            'I’ll be taking care of you this evening.'
+	          ),
+	          React.createElement(
+	            'div',
+	            null,
+	            'Do you have any restrictions?'
+	          ),
+	          React.createElement(
+	            'div',
+	            null,
+	            'Anything you’re afraid to consume?”'
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'Hoping to escape his life in the Outside World, Jacob has joined the team at Restaurant.  Each table provides an opportunity for a fresh start. Right?'
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'credits', style: { textAlign: "center" } },
+	          React.createElement(
+	            'div',
+	            { className: 'centered' },
+	            React.createElement(
+	              'h1',
+	              null,
+	              'CAST'
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Jacob ........................................................................ Jacob Perkins* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' SBC ....................................................................... Mallory Portnoy* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Christian ................................................................... Ramon Torres '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Server ............................................................................ Matt Walker '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Olive .................................................................................... Rachel Lin '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Nora ................................................................................ Ying Ying Li* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Trudy ................................................................................ Anne Troup* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' 1 ........................................................................................ Dawn Evans* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' 2 .................................................................................... David Littleton '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' DJ .............................................................................. Devin Kawaoka* '
+	            )
+	          )
+	        ),
+	        React.createElement(Gallery, { className: 'restaurant-carousel', items: this.PHOTOSET })
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = Restaurant;
 
 /***/ }
 /******/ ]);

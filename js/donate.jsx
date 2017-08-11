@@ -10,14 +10,18 @@ var Contact = React.createClass({
       <main className="group donate">
         <section>
           <p>
-            Two Headed Rep is a brand new company.  We are able to make work
-            thanks to the generosity of people like you! Your donations help us achieve our goal of creating accessible,
-            cheap theatrical events that bring old and new plays into conversation
+            Two Headed Rep is able to make work
+            thanks to the generosity of people like you! Your donations help us achieve our goal of creating accessible
+            theatrical events that bring old and new plays into conversation
             with one another.
           </p>
 
           <p className="donate-link">
             <a href="http://www.fracturedatlas.org/site/fiscal/profile?id=13891">click here to make a donation</a>
+          </p>
+
+          <p>
+            Alternatively, you can make a check out to Fractured Atlas, put 'Two Headed Rep' in the memo, and send it to the Fractured Atlas offices (located at 248 West 35th Street, 10th Floor, New York, NY 10001).
           </p>
 
           <p>

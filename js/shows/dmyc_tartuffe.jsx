@@ -15,8 +15,7 @@ var UntitledTartuffe = React.createClass({
             </div>
 
             <div style={{float: "right", textAlign: "right"}}>
-              <div style={{fontWeight: "bold"}}>TARTUFFE</div>
-              <div>by Molière</div>
+              <div>Molière's <span style={{fontWeight: "bold"}}>TARTUFFE</span></div>
               <div>translated and adapted by Amanda Keating</div>
               <div>adapted and directed by Molly Clifford</div>
             </div>
