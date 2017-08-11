@@ -6,9 +6,9 @@ var Retreat = React.createClass({
   PHOTOSET: [
     {
       src: "images/retreat_images/retreat1.jpg",
-      width: 200,
-      height: 375,
-      aspectRatio: 0.5,
+      width: 600,
+      height: 400,
+      aspectRatio: 1.5,
       lightboxImage: {
         src: "images/retreat_images/retreat1.jpg"
       }
