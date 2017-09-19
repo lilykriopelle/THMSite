@@ -7,6 +7,12 @@ var Shows = React.createClass({
       <main className="shows">
         <ul>
           <li>
+            <a href="/rm_mj">
+              Reno & Moll / Miss Julie – November 2018
+            </a>
+          </li>
+
+          <li>
             <a href="/restaurant_lysistrata">
               Restaurant in D Major / Lysistrata – April 2017
             </a>
