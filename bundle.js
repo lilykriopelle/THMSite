@@ -30372,7 +30372,7 @@
 	          React.createElement(
 	            'div',
 	            { className: 'centered' },
-	            'November 4-May 18, 2017'
+	            'November 4-18, 2017'
 	          ),
 	          React.createElement(
 	            'div',

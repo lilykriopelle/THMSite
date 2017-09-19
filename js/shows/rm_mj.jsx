@@ -22,7 +22,7 @@ var RestaurantLysistrata = React.createClass({
           </div>
 
           <div style={{marginTop: 20}}>
-            <div className="centered">November 4-May 18, 2017</div>
+            <div className="centered">November 4-18, 2017</div>
             <div className="centered">The Workshop Theater's Jewel Box Theater</div>
           </div>
         </section>
