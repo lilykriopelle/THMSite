@@ -8,7 +8,7 @@ var Shows = React.createClass({
         <ul>
           <li>
             <a href="/rm_mj">
-              Reno & Moll / Miss Julie – November 2018
+              Reno & Moll / Miss Julie – November 2017
             </a>
           </li>
 

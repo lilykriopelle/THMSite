@@ -29669,7 +29669,7 @@
 	          React.createElement(
 	            "a",
 	            { href: "/rm_mj" },
-	            "Reno & Moll / Miss Julie – November 2018"
+	            "Reno & Moll / Miss Julie – November 2017"
 	          )
 	        ),
 	        React.createElement(
