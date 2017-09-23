@@ -26,7 +26,7 @@ var RestaurantLysistrata = React.createClass({
             <div className="centered">The Workshop Theater's Jewel Box Theater</div>
           </div>
 
-          <div className="centered" style={{marginTop: 20}}>
+          <div style={{marginTop: 20}}>
             This fall, Two Headed Rep’s pairing of plays find themselves in the workplace, inhabited by people who, every day, confront, consider, and carry out what’s expected of them. What weighs on us when we’re expected to do everything? What about when nothing is expected of us? And what do we do about the dog? Two Headed Rep asks these questions and more with their fall rep: a new adaptation of Miss Julie by Brittany Allen, Will Arbery, and Amanda Keating, and Reno & Moll, a new play written in response to Strindberg’s classic by Emma Horwitz.
           </div>
         </section>
