@@ -27019,7 +27019,7 @@
 	            React.createElement(
 	              "a",
 	              { className: this.highlightClass("blog"), target: "_blank", href: "http://blog.twoheadedrep.com" },
-	              "blog"
+	              "the archive"
 	            )
 	          )
 	        )
