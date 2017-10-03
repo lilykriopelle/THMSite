@@ -29,11 +29,22 @@ var Home = React.createClass({
     );
   },
 
+  show: function() {
+    return (
+      <div>
+        <img src={'images/Fall2017.jpg'}/>
+        <p className="donate-link" style={{marginTop: 20}}>
+          Tickets on sale October 5th!
+        </p>
+      </div>
+    );
+  },
+
   render: function() {
     return (
       <main className="group">
         <section className="front-page">
-          {this.noShow()}
+          {this.show()}
         </section>
       </main>
     );

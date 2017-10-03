@@ -27074,6 +27074,19 @@
 	    );
 	  },
 	
+	  show: function () {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement('img', { src: 'images/Fall2017.jpg' }),
+	      React.createElement(
+	        'p',
+	        { className: 'donate-link', style: { marginTop: 20 } },
+	        'Tickets on sale October 5th!'
+	      )
+	    );
+	  },
+	
 	  render: function () {
 	    return React.createElement(
 	      'main',
@@ -27081,7 +27094,7 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.noShow()
+	        this.show()
 	      )
 	    );
 	  }
