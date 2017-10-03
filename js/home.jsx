@@ -32,10 +32,10 @@ var Home = React.createClass({
   show: function() {
     return (
       <div>
-        <img src={'images/Fall2017.jpg'}/>
-        <p className="donate-link" style={{marginTop: 20}}>
+        <p className="donate-link" style={{marginBottom: 20}}>
           Tickets on sale October 5th!
         </p>
+        <img src={'images/Fall2017.jpg'}/>
       </div>
     );
   },

@@ -27078,12 +27078,12 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement('img', { src: 'images/Fall2017.jpg' }),
 	      React.createElement(
 	        'p',
-	        { className: 'donate-link', style: { marginTop: 20 } },
+	        { className: 'donate-link', style: { marginBottom: 20 } },
 	        'Tickets on sale October 5th!'
-	      )
+	      ),
+	      React.createElement('img', { src: 'images/Fall2017.jpg' })
 	    );
 	  },
 	
