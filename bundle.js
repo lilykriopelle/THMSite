@@ -27094,7 +27094,16 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.show()
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(
+	            'p',
+	            { className: 'donate-link', style: { marginBottom: 20 } },
+	            'Tickets on sale October 5th!'
+	          ),
+	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
+	        )
 	      )
 	    );
 	  }

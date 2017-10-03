@@ -44,7 +44,12 @@ var Home = React.createClass({
     return (
       <main className="group">
         <section className="front-page">
-          {this.show()}
+          <div>
+            <p className="donate-link" style={{marginBottom: 20}}>
+              Tickets on sale October 5th!
+            </p>
+            <img src={'images/Fall2017Horizontal.jpg'}/>
+          </div>
         </section>
       </main>
     );
