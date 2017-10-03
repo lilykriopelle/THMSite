@@ -27083,7 +27083,7 @@
 	        { className: 'donate-link', style: { marginBottom: 20 } },
 	        'Tickets on sale October 5th!'
 	      ),
-	      React.createElement('img', { src: 'images/Fall2017.jpg' })
+	      React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
 	    );
 	  },
 	
