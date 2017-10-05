@@ -27097,7 +27097,6 @@
 	        React.createElement(
 	          'div',
 	          null,
-	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
 	            { style: { fontSize: 50, marginBottom: 20 }, className: 'centered' },
@@ -27114,6 +27113,7 @@
 	            ),
 	            ' on sale now!'
 	          ),
+	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
 	            { className: 'centered', style: { marginTop: 15 } },
