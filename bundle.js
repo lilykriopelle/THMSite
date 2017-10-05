@@ -27112,7 +27112,7 @@
 	              { href: 'https://www.artful.ly/two-headed-rep/store/passes', className: 'highlight-link' },
 	              'passes'
 	            ),
-	            '* on sale now!'
+	            ' on sale now!'
 	          ),
 	          React.createElement(
 	            'p',
