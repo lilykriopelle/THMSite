@@ -27116,8 +27116,8 @@
 	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
-	            { className: 'centered', style: { marginTop: 15 } },
-	            "We're super excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. We guarantee you'll have a great time either way."
+	            { className: 'centered', style: { marginTop: 20 } },
+	            "We're excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. We guarantee you'll have a great time either way."
 	          )
 	        )
 	      )
