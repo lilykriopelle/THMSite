@@ -51,8 +51,7 @@ var Home = React.createClass({
               <a href="https://www.artful.ly/two-headed-rep" className="highlight-link">tickets</a> and <a href="https://www.artful.ly/two-headed-rep/store/passes" className="highlight-link">passes</a> on sale now!
             </p>
 
-            <p className="centered" style={{marginTop: 15}}>{"We're super excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them!"}</p>
-            <p className="centered" style={{marginTop: 15}}>{"See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. We guarantee you'll have a great time either way."}</p>
+            <p className="centered" style={{marginTop: 15}}>{"We're super excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. We guarantee you'll have a great time either way."}</p>
           </div>
         </section>
       </main>
