@@ -27102,13 +27102,13 @@
 	            { style: { fontSize: 50, marginBottom: 20 }, className: 'centered' },
 	            React.createElement(
 	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep', className: 'highlight-link' },
+	              { href: 'https://www.artful.ly/two-headed-rep', target: '_blank', className: 'highlight-link' },
 	              'tickets'
 	            ),
 	            ' and ',
 	            React.createElement(
 	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep/store/passes', className: 'highlight-link' },
+	              { href: 'https://www.artful.ly/two-headed-rep/store/passes', target: '_blank', className: 'highlight-link' },
 	              'passes'
 	            ),
 	            ' on sale now!'
