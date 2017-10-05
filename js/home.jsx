@@ -47,7 +47,7 @@ var Home = React.createClass({
           <div>
             <img src={'images/Fall2017Horizontal.jpg'}/>
 
-            <p style={{fontSize: 50, marginBottom: 20}}>
+            <p style={{fontSize: 50, marginBottom: 20}} className="centered">
               <a href="https://www.artful.ly/two-headed-rep" className="highlight-link">tickets</a> and <a href="https://www.artful.ly/two-headed-rep/store/passes" className="highlight-link">passes</a> on sale now!
             </p>
 

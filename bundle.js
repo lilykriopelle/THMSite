@@ -27100,7 +27100,7 @@
 	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
-	            { style: { fontSize: 50, marginBottom: 20 } },
+	            { style: { fontSize: 50, marginBottom: 20 }, className: 'centered' },
 	            React.createElement(
 	              'a',
 	              { href: 'https://www.artful.ly/two-headed-rep', className: 'highlight-link' },
