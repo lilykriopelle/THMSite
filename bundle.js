@@ -27100,16 +27100,16 @@
 	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
-	            { className: 'donate-link', style: { marginBottom: 20 } },
+	            { style: { fontSize: 50, marginBottom: 20 } },
 	            React.createElement(
 	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep' },
-	              'Tickets'
+	              { href: 'https://www.artful.ly/two-headed-rep', className: 'highlight-link' },
+	              'tickets'
 	            ),
 	            ' and ',
 	            React.createElement(
 	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep/store/passes' },
+	              { href: 'https://www.artful.ly/two-headed-rep/store/passes', className: 'highlight-link' },
 	              'passes'
 	            ),
 	            '* on sale now!'
