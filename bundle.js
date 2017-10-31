@@ -30442,7 +30442,7 @@
 	            ),
 	            ' on sale now!'
 	          ),
-	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
+	          React.createElement('img', { style: { width: '100%' }, src: 'images/Fall2017Horizontal.jpg' }),
 	          React.createElement(
 	            'p',
 	            { style: { marginTop: 20 } },
