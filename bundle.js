@@ -27102,7 +27102,7 @@
 	            { style: { fontSize: 50, marginBottom: 20 }, className: 'centered' },
 	            React.createElement(
 	              'a',
-	              { href: '/rm_mj', target: '_blank', className: 'highlight-link' },
+	              { href: 'https://www.artful.ly/two-headed-rep', target: '_blank', className: 'highlight-link' },
 	              'tickets'
 	            ),
 	            ' and ',
@@ -27113,7 +27113,11 @@
 	            ),
 	            ' on sale now!'
 	          ),
-	          React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' }),
+	          React.createElement(
+	            'a',
+	            { href: '/rm_mj', target: '_blank' },
+	            React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
+	          ),
 	          React.createElement(
 	            'p',
 	            { style: { marginTop: 20 } },
@@ -30443,7 +30447,7 @@
 	            ' on sale now!'
 	          ),
 	          React.createElement('img', { style: { width: '100%' }, src: 'images/Fall2017Horizontal.jpg' }),
-	          React.createElement('img', { style: { width: '100%' }, src: 'images/sched.jpg' }),
+	          React.createElement('img', { style: { width: '100%', marginTop: 20 }, src: 'images/sched.jpg' }),
 	          React.createElement(
 	            'p',
 	            { style: { marginTop: 20 } },
