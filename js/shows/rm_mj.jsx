@@ -36,6 +36,7 @@ var RestaurantLysistrata = React.createClass({
             </p>
 
             <img style={{width: '100%'}} src={'images/Fall2017Horizontal.jpg'}/>
+            <img style={{width: '100%'}} src={'images/sched.jpg'}/>
 
             <p style={{marginTop: 20}}>{"We are so excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. Trust us: you'll have a great time either way."}</p>
           </div>
