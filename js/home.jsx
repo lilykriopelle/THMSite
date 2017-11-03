@@ -49,7 +49,7 @@ var Home = React.createClass({
               <a href="https://www.artful.ly/two-headed-rep" target="_blank" className="highlight-link">tickets</a> and <a href="https://www.artful.ly/two-headed-rep/store/passes" target="_blank" className="highlight-link">passes</a> on sale now!
             </p>
 
-            <a href="/rm_mj" target="_blank">
+            <a href="/rm_mj">
               <img src={'images/Fall2017Horizontal.jpg'}/>
             </a>
 

@@ -27115,7 +27115,7 @@
 	          ),
 	          React.createElement(
 	            'a',
-	            { href: '/rm_mj', target: '_blank' },
+	            { href: '/rm_mj' },
 	            React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
 	          ),
 	          React.createElement(
