@@ -30446,7 +30446,7 @@
 	            ),
 	            ' on sale now!'
 	          ),
-	          React.createElement('img', { style: { width: '100%', marginTop: 20 }, src: 'images/sched.jpg' }),
+	          React.createElement('img', { style: { width: '100%', marginBottom: 20 }, src: 'images/sched.jpg' }),
 	          React.createElement(
 	            'a',
 	            { href: 'https://www.artful.ly/two-headed-rep' },
