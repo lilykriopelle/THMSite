@@ -44,17 +44,7 @@ var Home = React.createClass({
     return (
       <main className="group">
         <section className="front-page">
-          <div>
-            <p style={{fontSize: 50, marginBottom: 20}} className="centered">
-              <a href="https://www.artful.ly/two-headed-rep" target="_blank" className="highlight-link">tickets</a> and <a href="https://www.artful.ly/two-headed-rep/store/passes" target="_blank" className="highlight-link">passes</a> on sale now!
-            </p>
-
-            <a href="/rm_mj">
-              <img src={'images/Fall2017Horizontal.jpg'}/>
-            </a>
-
-            <p style={{marginTop: 20}}>{"We are so excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. Trust us: you'll have a great time either way."}</p>
-          </div>
+            {this.noShow()}
         </section>
       </main>
     );

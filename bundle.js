@@ -77,6 +77,7 @@
 	var Tartuffe = __webpack_require__(316);
 	var Lysistrata = __webpack_require__(317);
 	var Restaurant = __webpack_require__(318);
+	var Reno = __webpack_require__(319);
 	
 	// ROUTING
 	var Router = __webpack_require__(34).Router;
@@ -120,6 +121,7 @@
 	      React.createElement(Route, { path: 'dmyc', component: DMYC }),
 	      React.createElement(Route, { path: 'tartuffe', component: Tartuffe }),
 	      React.createElement(Route, { path: 'lysistrata', component: Lysistrata }),
+	      React.createElement(Route, { path: 'reno_and_moll', component: Reno }),
 	      React.createElement(Route, { path: 'restaurant', component: Restaurant }),
 	      React.createElement(Route, { path: 'tickets', component: Tickets })
 	    )
@@ -27094,36 +27096,7 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        React.createElement(
-	          'div',
-	          null,
-	          React.createElement(
-	            'p',
-	            { style: { fontSize: 50, marginBottom: 20 }, className: 'centered' },
-	            React.createElement(
-	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep', target: '_blank', className: 'highlight-link' },
-	              'tickets'
-	            ),
-	            ' and ',
-	            React.createElement(
-	              'a',
-	              { href: 'https://www.artful.ly/two-headed-rep/store/passes', target: '_blank', className: 'highlight-link' },
-	              'passes'
-	            ),
-	            ' on sale now!'
-	          ),
-	          React.createElement(
-	            'a',
-	            { href: '/rm_mj' },
-	            React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
-	          ),
-	          React.createElement(
-	            'p',
-	            { style: { marginTop: 20 } },
-	            "We are so excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. Trust us: you'll have a great time either way."
-	          )
-	        )
+	        this.noShow()
 	      )
 	    );
 	  }
@@ -36077,6 +36050,200 @@
 	});
 	
 	module.exports = Restaurant;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Gallery = __webpack_require__(267);
+	
+	var Retreat = React.createClass({
+	  displayName: 'Retreat',
+	
+	  PHOTOSET: [{
+	    src: "images/rm_images/1.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/1.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/2.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/rm_images/2.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/3.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/3.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/4.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/4.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/5.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/5.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/6.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/6.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/7.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/7.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/8.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/8.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/9.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/9.jpg"
+	    }
+	  }, {
+	    src: "images/rm_images/10.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/rm_images/10.jpg"
+	    }
+	  }],
+	
+	  render: function () {
+	
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'section',
+	        { className: 'show-details' },
+	        React.createElement(
+	          'div',
+	          { className: 'group' },
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "left", textAlign: "left" } },
+	            React.createElement(
+	              'h1',
+	              { style: { fontSize: "30" } },
+	              'Reno & Moll'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'by Emma Horwitz'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'directed by Lily Riopelle'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "right", textAlign: "right" } },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Scenic Design by Cate McCrea'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Costume Design by Nicole Slaven'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Lighting Design by Cheyenne Sykes'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sound Design by John Salutz'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Photos by Ashley Garrett'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { style: { marginBottom: 20, textAlign: "justify" } },
+	          'Harper has played the most beloved dog on children\'s TV for ten years. She knows her lines and she knows her choreography, she just doesn\'t know why she\'s still doing this job. Is it for the fans who adore her? Do they adore her or just her canine alter ego? And what\'s the difference anyway? When Harper\'s longtime co-star leaves the show, she wonders whether it might be time to make a change as well. But how do you change when you\'ve played the same character for so long that you can\'t remember what it\'s like to be yourself?'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'credits', style: { textAlign: "center" } },
+	          React.createElement(
+	            'div',
+	            { className: 'centered' },
+	            React.createElement(
+	              'h1',
+	              null,
+	              'CAST'
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Benj ........................................................................ Alton Alburo* '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Daisy/Simone ....................................................................... Zoë Geltman '
+	            ),
+	            React.createElement(
+	              'div',
+	              null,
+	              ' Harper ............................................................................. Eva Victor '
+	            )
+	          )
+	        ),
+	        React.createElement(Gallery, { className: 'retreat-carousel', items: this.PHOTOSET })
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = Retreat;
 
 /***/ }
 /******/ ]);

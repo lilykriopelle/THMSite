@@ -31,6 +31,7 @@ var DMYC = require('./shows/dmyc.jsx');
 var Tartuffe = require('./shows/tartuffe.jsx');
 var Lysistrata = require('./shows/lysistrata.jsx');
 var Restaurant = require('./shows/restaurant.jsx');
+var Reno = require('./shows/rm.jsx');
 
 // ROUTING
 var Router = require('react-router').Router;
@@ -70,6 +71,7 @@ $(function() {
         <Route path="dmyc" component={DMYC}/>
         <Route path="tartuffe" component={Tartuffe}/>
         <Route path="lysistrata" component={Lysistrata}/>
+        <Route path="reno_and_moll" component={Reno}/>
         <Route path="restaurant" component={Restaurant}/>
         <Route path="tickets" component={Tickets}/>
       </Route>
