@@ -28,7 +28,7 @@ var RestaurantLysistrata = React.createClass({
 
           <div className="group" style={{marginTop: 20}}>
             <ShowPreview classes={["float-left"]} title="RENO & MOLL" imageUrl="images/rm_images/1.jpg" link="/reno_and_moll"/>
-            <ShowPreview classes={["float-right"]} title="MISS JULIE" imageUrl="images/mj_images/1.jpg" link="/miss_julie"/>
+            <ShowPreview classes={["float-right"]} title="MISS JULIE" imageUrl="images/mj_images/4.jpg" link="/miss_julie"/>
           </div>
         </section>
       </main>

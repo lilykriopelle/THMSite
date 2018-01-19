@@ -30401,7 +30401,7 @@
 	          'div',
 	          { className: 'group', style: { marginTop: 20 } },
 	          React.createElement(ShowPreview, { classes: ["float-left"], title: 'RENO & MOLL', imageUrl: 'images/rm_images/1.jpg', link: '/reno_and_moll' }),
-	          React.createElement(ShowPreview, { classes: ["float-right"], title: 'MISS JULIE', imageUrl: 'images/mj_images/1.jpg', link: '/miss_julie' })
+	          React.createElement(ShowPreview, { classes: ["float-right"], title: 'MISS JULIE', imageUrl: 'images/mj_images/4.jpg', link: '/miss_julie' })
 	        )
 	      )
 	    );
