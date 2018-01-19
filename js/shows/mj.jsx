@@ -122,7 +122,7 @@ var Retreat = React.createClass({
           <div className="credits" style={{textAlign: "center"}}>
             <div className="centered">
               <h1>CAST</h1>
-              <div> Julie ........................................................................ Sara Jes Austell </div>
+              <div> Julie ........................................................................ Sarah Jes Austell </div>
               <div> Gene ....................................................................... Fernando Gonzales* </div>
               <div> Krissy ............................................................................. Rachel Sachnoff </div>
             </div>

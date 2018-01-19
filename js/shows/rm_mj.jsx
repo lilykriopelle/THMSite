@@ -27,7 +27,7 @@ var RestaurantLysistrata = React.createClass({
           </div>
 
           <div className="centered">
-            <p>Featuring Alton Alburo*, Sara Jas Austell, Zoë Geltman, Fernando Gonzales*, Rachel Sachnoff, and Eva Victor.</p>
+            <p>Featuring Alton Alburo*, Sarah Jas Austell, Zoë Geltman, Fernando Gonzales*, Rachel Sachnoff, and Eva Victor.</p>
             <p style={{textAlign: 'right', marginTop: 0}}>*Denotes members of Actors Equity Association</p>
             <p>Set design by Cate McCrea, costume design by Nicole Slaven, lighting design by Cheyenne Sykes, sound design by John Salutz, Stage Management by Kate Purdy and Hanako Rodriguez.</p>
           </div>
