@@ -26,6 +26,12 @@ var RestaurantLysistrata = React.createClass({
             <div className="centered">The Workshop Theater's Jewel Box Theater</div>
           </div>
 
+          <div className="centered">
+            <p>Featuring Alton Alburo*, Sara Jas Austell, Zoë Geltman, Fernando Gonzales*, Rachel Sachnoff, and Eva Victor.</p>
+            <p style={{textAlign: 'right', marginTop: 0}}>*Denotes members of Actors Equity Association</p>
+            <p>Set design by Cate McCrea, costume design by Nicole Slaven, lighting design by Cheyenne Sykes, sound design by John Salutz, Stage Management by Kate Purdy and Hanako Rodriguez.</p>
+          </div>
+
           <div className="group" style={{marginTop: 20}}>
             <ShowPreview classes={["float-left"]} title="RENO & MOLL" imageUrl="images/rm_images/1.jpg" link="/reno_and_moll"/>
             <ShowPreview classes={["float-right"]} title="MISS JULIE" imageUrl="images/mj_images/4.jpg" link="/miss_julie"/>
