@@ -30403,7 +30403,7 @@
 	          React.createElement(
 	            'p',
 	            null,
-	            'Featuring Alton Alburo*, Sarah Jas Austell, Zoë Geltman, Fernando Gonzales*, Rachel Sachnoff, and Eva Victor.'
+	            'Featuring Alton Alburo*, Sarah Jas Austell, Zoë Geltman, Fernando Gonzalez*, Rachel Sachnoff, and Eva Victor.'
 	          ),
 	          React.createElement(
 	            'p',
@@ -36412,7 +36412,7 @@
 	            React.createElement(
 	              'div',
 	              null,
-	              ' Gene ....................................................................... Fernando Gonzales* '
+	              ' Gene ....................................................................... Fernando Gonzalez* '
 	            ),
 	            React.createElement(
 	              'div',

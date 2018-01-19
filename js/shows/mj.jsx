@@ -123,7 +123,7 @@ var Retreat = React.createClass({
             <div className="centered">
               <h1>CAST</h1>
               <div> Julie ........................................................................ Sarah Jes Austell </div>
-              <div> Gene ....................................................................... Fernando Gonzales* </div>
+              <div> Gene ....................................................................... Fernando Gonzalez* </div>
               <div> Krissy ............................................................................. Rachel Sachnoff </div>
             </div>
           </div>
