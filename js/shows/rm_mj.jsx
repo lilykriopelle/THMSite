@@ -26,19 +26,9 @@ var RestaurantLysistrata = React.createClass({
             <div className="centered">The Workshop Theater's Jewel Box Theater</div>
           </div>
 
-          <div style={{marginTop: 20}}>
-            This fall, Two Headed Rep’s pairing of plays find themselves in the workplace, inhabited by people who, every day, confront, consider, and carry out what’s expected of them. What weighs on us when we’re expected to do everything? What about when nothing is expected of us? And what do we do about the dog? Two Headed Rep asks these questions and more with their fall rep: a new adaptation of Miss Julie by Brittany Allen, Will Arbery, and Amanda Keating, and Reno & Moll, a new play written in response to Strindberg’s classic by Emma Horwitz.
-          </div>
-
-          <div>
-            <p style={{fontSize: 50, marginBottom: 20}} className="centered">
-              <a href="https://www.artful.ly/two-headed-rep" target="_blank" className="highlight-link">tickets</a> and <a href="https://www.artful.ly/two-headed-rep/store/passes" target="_blank" className="highlight-link">passes</a> on sale now!
-            </p>
-
-            <img style={{width: '100%', marginBottom: 20}} src={'images/sched.jpg'}/>
-            <a href="https://www.artful.ly/two-headed-rep"><img style={{width: '100%'}} src={'images/Fall2017Horizontal.jpg'}/></a>
-
-            <p style={{marginTop: 20}}>{"We are so excited to announce that this fall, for the first time ever, you have the option of purchasing a Two Play Pass. What does that mean, exactly? It means you can buy one pass for just $23 that gets you into both shows on whatever day(s)/night(s) you want to see them! See old and new side by side in a single sitting, or come hang out with your favorite upstart theatre company on two separate occasions. Trust us: you'll have a great time either way."}</p>
+          <div className="group" style={{marginTop: 20}}>
+            <ShowPreview classes={["float-left"]} title="RENO & MOLL" imageUrl="images/rm_images/1.jpg" link="/reno_and_moll"/>
+            <ShowPreview classes={["float-right"]} title="MISS JULIE" imageUrl="images/mj_images/1.jpg" link="/miss_julie"/>
           </div>
         </section>
       </main>
