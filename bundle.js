@@ -30089,7 +30089,7 @@
 	        { href: this.props.link, className: "overlay" },
 	        React.createElement(
 	          "div",
-	          { style: { position: "absolute", bottom: 16, right: 20 } },
+	          { style: { position: "absolute", bottom: 16, right: 20, background: 'white', color: 'black', padding: 5 } },
 	          this.props.title.toUpperCase()
 	        )
 	      )
