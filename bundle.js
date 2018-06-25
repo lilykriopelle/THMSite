@@ -29551,7 +29551,7 @@
 	        React.createElement(
 	          "p",
 	          { className: this.state.what ? "" : "invisible" },
-	          "Two Headed Rep produces new plays in repertory with the classic plays that inspire them.  By creating a space in which old and the new exist side by side, we provide our audience with a living, breathing artistic and cultural context for the works we present. We embrace the repertory format as a means to enrich the audience experience of the old and the new, and foster an enhanced understanding of the relevance and necessity of each."
+	          "Two Headed Rep produces new and classic plays in repertory. We create adaptations of classics that are politically responsible as well as fun, and commission new work, inspired by these classics, from playwrights whose perspectives have historically been excluded from the theatrical canon. By inviting a spectrum of diverse responses to the classics, we create a more equitable, inclusive, and innovative canon for future generations to inherit."
 	        )
 	      ),
 	      React.createElement(
