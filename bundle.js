@@ -27031,7 +27031,7 @@
 	            null,
 	            React.createElement(
 	              "a",
-	              { className: this.highlightClass("tickets"), target: "_blank", href: "https://www.artful.ly/two-headed-rep" },
+	              { className: "ticket-tab", target: "_blank", href: "https://www.artful.ly/two-headed-rep" },
 	              "tickets"
 	            )
 	          )

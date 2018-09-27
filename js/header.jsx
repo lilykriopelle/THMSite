@@ -27,7 +27,7 @@ var Header = React.createClass({
             <li><a className={this.highlightClass("contact")} href="/contact">contact</a></li>
             <li><a className={this.highlightClass("donate")} href="/donate">donate</a></li>
             <li><a className={this.highlightClass("blog")} target="_blank" href="http://blog.twoheadedrep.com">the archive</a></li>
-            <li><a className={this.highlightClass("tickets")} target="_blank" href="https://www.artful.ly/two-headed-rep">tickets</a></li>
+            <li><a className="ticket-tab" target="_blank" href="https://www.artful.ly/two-headed-rep">tickets</a></li>
           </ul>
         </nav>
       </header>
