@@ -26947,11 +26947,6 @@
 	            "a",
 	            { href: "/" },
 	            React.createElement("img", { style: { width: 200 }, className: "left", src: "images/logo.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "right width100 no-select", style: { paddingRight: 20 } },
-	            "creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon"
 	          )
 	        ),
 	        React.createElement(

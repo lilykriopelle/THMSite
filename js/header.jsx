@@ -13,16 +13,6 @@ var Header = React.createClass({
             <a href="/">
               <img style={{width: 200}} className="left" src="images/logo.png"/>
             </a>
-            <div className="right width100 no-select" style={{paddingRight: 20}}>
-              creating a new canon
-              creating a new canon
-              creating a new canon
-              creating a new canon
-              creating a new canon
-              creating a new canon
-              creating a new canon
-              creating a new canon
-            </div>
           </div>
           <ul className="nav-links group">
             <li><a className={this.highlightClass("about")} href="/about">about</a></li>
