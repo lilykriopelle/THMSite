@@ -32,9 +32,13 @@ var Home = React.createClass({
   show: function() {
     return (
       <div>
-        <img src={'images/llkaraoke.jpg'}/>
+        <div style={{marginBottom: 20}}>
+          <img src={'images/llkaraoke.jpg'} style={{width: 600, margin: 'auto'}} target="_blank"/>
+        </div>
         <p className="donate-link" style={{marginTop: 20}}>
-          <a href="https://www.artful.ly/two-headed-rep">Tickets on sale now!</a>
+          <a className="ticket-link" href="https://www.artful.ly/two-headed-rep">
+            BUY TICKETS!
+          </a>
         </p>
       </div>
     );

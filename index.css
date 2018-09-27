@@ -352,6 +352,16 @@ main section:last-child {
   background: none;
 }
 
+.ticket-link {
+  border-radius: 50px;
+  background: red;
+  padding: 10px;
+}
+
+.ticket-link:hover {
+  background: rgb(0, 200, 231);
+}
+
 /*.carousel {
   background: red;
 }*/
