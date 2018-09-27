@@ -182,6 +182,7 @@ main p {
 
 .align-center {
   align-items: center;
+  justify-content: center;
 }
 
 .text-right {
