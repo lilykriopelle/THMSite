@@ -121,7 +121,7 @@ header {
 }
 
 .header-nav {
-  width: 663px;
+  width: 665px;
 }
 
 .header-nav p {
@@ -365,6 +365,11 @@ main section:last-child {
 
 .ticket-tab {
   background: rgb(0, 200, 231);
+  font-weight: bold;
+}
+
+.ticket-tab:hover {
+  background: red;
 }
 
 /*.carousel {
