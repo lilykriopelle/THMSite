@@ -26951,31 +26951,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "right width100 no-select", style: { paddingRight: 20 } },
-	            React.createElement(
-	              "p",
-	              { className: "tagline silver" },
-	              "creating a new canon"
-	            ),
-	            React.createElement(
-	              "p",
-	              { className: "tagline silver" },
-	              "creating a new canon"
-	            ),
-	            React.createElement(
-	              "p",
-	              { className: "tagline silver" },
-	              "creating a new canon"
-	            ),
-	            React.createElement(
-	              "p",
-	              { className: "tagline" },
-	              "creating a new canon"
-	            ),
-	            React.createElement(
-	              "p",
-	              { className: "tagline silver" },
-	              "creating a new canon"
-	            )
+	            "creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon creating a new canon"
 	          )
 	        ),
 	        React.createElement(

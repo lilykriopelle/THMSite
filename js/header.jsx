@@ -14,11 +14,14 @@ var Header = React.createClass({
               <img style={{width: 200}} className="left" src="images/logo.png"/>
             </a>
             <div className="right width100 no-select" style={{paddingRight: 20}}>
-              <p className="tagline silver">creating a new canon</p>
-              <p className="tagline silver">creating a new canon</p>
-              <p className="tagline silver">creating a new canon</p>
-              <p className="tagline">creating a new canon</p>
-              <p className="tagline silver">creating a new canon</p>
+              creating a new canon
+              creating a new canon
+              creating a new canon
+              creating a new canon
+              creating a new canon
+              creating a new canon
+              creating a new canon
+              creating a new canon
             </div>
           </div>
           <ul className="nav-links group">

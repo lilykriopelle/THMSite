@@ -369,7 +369,7 @@ main section:last-child {
 }
 
 .ticket-tab:hover {
-  background: red;
+  background: red !important;
 }
 
 /*.carousel {
