@@ -27082,12 +27082,16 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      React.createElement('img', { src: 'images/llkaraoke.jpg' }),
 	      React.createElement(
 	        'p',
-	        { className: 'donate-link', style: { marginBottom: 20 } },
-	        'Tickets on sale October 5th!'
-	      ),
-	      React.createElement('img', { src: 'images/Fall2017Horizontal.jpg' })
+	        { className: 'donate-link', style: { marginTop: 20 } },
+	        React.createElement(
+	          'a',
+	          { href: 'https://www.artful.ly/two-headed-rep' },
+	          'Tickets on sale now!'
+	        )
+	      )
 	    );
 	  },
 	
@@ -27098,7 +27102,7 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.noShow()
+	        this.show()
 	      )
 	    );
 	  }

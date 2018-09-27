@@ -32,10 +32,10 @@ var Home = React.createClass({
   show: function() {
     return (
       <div>
-        <p className="donate-link" style={{marginBottom: 20}}>
-          Tickets on sale October 5th!
+        <img src={'images/llkaraoke.jpg'}/>
+        <p className="donate-link" style={{marginTop: 20}}>
+          <a href="https://www.artful.ly/two-headed-rep">Tickets on sale now!</a>
         </p>
-        <img src={'images/Fall2017Horizontal.jpg'}/>
       </div>
     );
   },
@@ -44,7 +44,7 @@ var Home = React.createClass({
     return (
       <main className="group">
         <section className="front-page">
-            {this.noShow()}
+            {this.show()}
         </section>
       </main>
     );
