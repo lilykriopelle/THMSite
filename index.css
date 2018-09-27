@@ -355,7 +355,8 @@ main section:last-child {
 .ticket-link {
   border-radius: 50px;
   background: red;
-  padding: 10px;
+  padding: 15px !important;
+  font-weight: bold !important;
 }
 
 .ticket-link:hover {

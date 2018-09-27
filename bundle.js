@@ -27025,6 +27025,15 @@
 	              { className: this.highlightClass("blog"), target: "_blank", href: "http://blog.twoheadedrep.com" },
 	              "the archive"
 	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "a",
+	              { className: this.highlightClass("tickets"), target: "_blank", href: "https://www.artful.ly/two-headed-rep" },
+	              "tickets"
+	            )
 	          )
 	        )
 	      )
@@ -27082,18 +27091,14 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(
-	        'div',
-	        { style: { marginBottom: 20 } },
-	        React.createElement('img', { src: 'images/llkaraoke.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' })
-	      ),
+	      React.createElement('img', { src: 'images/llkaraoke.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' }),
 	      React.createElement(
 	        'p',
-	        { className: 'donate-link', style: { marginTop: 20 } },
+	        { className: 'donate-link', style: { marginTop: 30 } },
 	        React.createElement(
 	          'a',
 	          { className: 'ticket-link', href: 'https://www.artful.ly/two-headed-rep' },
-	          'BUY TICKETS!'
+	          'GET TICKETS'
 	        )
 	      )
 	    );
