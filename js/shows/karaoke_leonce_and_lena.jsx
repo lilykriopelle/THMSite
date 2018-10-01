@@ -21,12 +21,12 @@ var KaraokeLL = React.createClass({
             </div>
           </div>
 
-          <div style={{marginTop: 20}}>
+          <div style={{marginTop: 20, marginBottom: 20}}>
             <div className="centered">October 20-27, 2016</div>
             <div className="centered">Access Theater</div>
           </div>
 
-          <img style={{marginTop: 20}} src={'images/llkaraokesidebyside.jpg'} style={{width: 600, margin: 'auto'}} target="_blank"/>
+          <img src={'images/llkaraokesidebyside.jpg'} style={{width: 600, margin: 'auto'}} target="_blank"/>
 
           <div style={{marginTop: 20}} className="centered">
             <p>Featuring Charles Baran*, Molly Carden*, Will Dagger, Eric Folks, Quinn Franzen*, Grace Gilmore, Michael Grew*, Zach Fike Hodges*, Zia Lawrence, Ying Ying Li*, Akyiaa Wilson, and Layla Wolfgang.</p>

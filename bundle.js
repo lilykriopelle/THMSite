@@ -30491,7 +30491,7 @@
 	        ),
 	        React.createElement(
 	          'div',
-	          { style: { marginTop: 20 } },
+	          { style: { marginTop: 20, marginBottom: 20 } },
 	          React.createElement(
 	            'div',
 	            { className: 'centered' },
@@ -30503,7 +30503,7 @@
 	            'Access Theater'
 	          )
 	        ),
-	        React.createElement('img', { style: { marginTop: 20 }, src: 'images/llkaraokesidebyside.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' }),
+	        React.createElement('img', { src: 'images/llkaraokesidebyside.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' }),
 	        React.createElement(
 	          'div',
 	          { style: { marginTop: 20 }, className: 'centered' },
