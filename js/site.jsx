@@ -23,6 +23,7 @@ var RetreatElectra = require('./shows/retreat_electra.jsx');
 var DMYCTartuffe = require('./shows/dmyc_tartuffe.jsx');
 var RestaurantLysistrata = require('./shows/restaurant_lysistrata.jsx');
 var RenoMollMissJulie = require('./shows/rm_mj.jsx');
+var KaraokeLL = require('./shows/karaoke_leonce_and_lena.jsx');
 
 // PLAYS
 var Electra = require('./shows/electra.jsx');
@@ -67,6 +68,7 @@ $(function() {
         <Route path="dmyc_tartuffe" component={DMYCTartuffe}/>
         <Route path="restaurant_lysistrata" component={RestaurantLysistrata}/>
         <Route path="rm_mj" component={RenoMollMissJulie}/>
+        <Route path="karaoke_leonce_and_lena" component={KaraokeLL}/>
         <Route path="retreat" component={Retreat}/>
         <Route path="electra" component={Electra}/>
         <Route path="dmyc" component={DMYC}/>
