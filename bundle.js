@@ -29671,6 +29671,15 @@
 	          null,
 	          React.createElement(
 	            "a",
+	            { href: "/karaoke_leonce_and_lena" },
+	            "Karaoke... / Leonce and Lena - October 2018"
+	          )
+	        ),
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
 	            { href: "/rm_mj" },
 	            "Reno & Moll / Miss Julie – November 2017"
 	          )
@@ -30523,7 +30532,7 @@
 	            'Karaoke at The Golden Sun Convention Center'
 	          ),
 	          React.createElement(
-	            'p',
+	            'div',
 	            null,
 	            'This Merger is happening. Sandwiched between team building exercises and more team building exercises is a mandatory karaoke hour at The Golden Sun Convention Center where everyone has to sing for their job. While Lenny and Vince vamp onstage and Elena and Janet hide in Stairwell D, Big Boss Pete is in the back still working with the numbers and there’s not enough Svedka & OJ to assuage everyone’s existential panic: Who’s getting fired? Who’s staying hired? And which is worse? Don’t worry. No matter what happens, everyone gets tote bags, toothpicks, and a killer selection of midi files to take with them on the road to whatever comes next.'
 	          )
@@ -30537,7 +30546,7 @@
 	            'Leonce and Lena'
 	          ),
 	          React.createElement(
-	            'p',
+	            'div',
 	            null,
 	            'When Prince Leonce learns that he\'s to wed Princess Lena – a woman he\'s never even laid eyes on – he and his BFF run away (to Italy!) to escape his fate and chase his ideals. Meanwhile, in another kingdom, Princess Lena learns she\'s to marry a prince named Leonce. Unwilling to be boxed in to the role of compliant wife to some dude she\'s never met and certainly doesn\'t love, she and her BFF run away (to Italy!) to escape her fate and chase her ideals. Oh, and this is a fairytale, so you can guess what happens next. Georg Büchner\'s raucous satire lampoons aristocracy, pseudo-philosophical bluster, and political echo chambers all while asking the question: who gets to rest easy knowing that fate will take care of everything in the end?'
 	          )
