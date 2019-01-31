@@ -355,22 +355,22 @@ main section:last-child {
 
 .ticket-link {
   border-radius: 50px;
-  background: red;
+  background: rgb(251, 91, 140);
   padding: 15px !important;
   font-weight: bold !important;
 }
 
 .ticket-link:hover {
-  background: rgb(0, 200, 231);
+  background: rgb(251, 179, 72);
 }
 
 .ticket-tab {
-  background: rgb(0, 200, 231);
+  background: rgb(251, 91, 140);
   font-weight: bold;
 }
 
 .ticket-tab:hover {
-  background: red !important;
+  background: rgb(251, 179, 72) !important;
 }
 
 /*.carousel {

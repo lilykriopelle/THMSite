@@ -27064,13 +27064,13 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement('img', { src: 'images/llkaraoke.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' }),
+	      React.createElement('img', { src: 'images/ettwo.jpg', style: { width: 800, margin: 'auto' }, target: '_blank' }),
 	      React.createElement(
 	        'p',
 	        { className: 'donate-link', style: { marginTop: 30 } },
 	        React.createElement(
 	          'a',
-	          { className: 'ticket-link', href: 'https://www.artful.ly/two-headed-rep' },
+	          { className: 'ticket-link', href: 'https://www.artful.ly/store/events/17116' },
 	          'GET TICKETS'
 	        )
 	      )
