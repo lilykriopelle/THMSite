@@ -34,7 +34,7 @@ var Home = React.createClass({
       <div>
         <p className="donate-link" style={{marginTop: 30}}>
           <a href="https://www.artful.ly/store/events/17116">
-            <img src={'images/ettwo.jpg'} style={{width: 800, margin: 'auto'}} target="_blank" alt="Et Two? Headed Rep"/>
+            <img src={'images/ettwo.jpg'} style={{width: '100%', margin: 'auto'}} target="_blank" alt="Et Two? Headed Rep"/>
           </a>
         </p>
       </div>

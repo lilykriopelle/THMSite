@@ -27070,7 +27070,7 @@
 	        React.createElement(
 	          'a',
 	          { href: 'https://www.artful.ly/store/events/17116' },
-	          React.createElement('img', { src: 'images/ettwo.jpg', style: { width: 800, margin: 'auto' }, target: '_blank', alt: 'Et Two? Headed Rep' })
+	          React.createElement('img', { src: 'images/ettwo.jpg', style: { width: '100%', margin: 'auto' }, target: '_blank', alt: 'Et Two? Headed Rep' })
 	        )
 	      )
 	    );
