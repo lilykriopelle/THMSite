@@ -365,7 +365,7 @@ main section:last-child {
 }
 
 .ticket-tab {
-  background: rgb(251, 91, 140);
+  background: rgb(251, 91, 140) !important;
   font-weight: bold;
 }
 
