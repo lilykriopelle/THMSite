@@ -27059,7 +27059,7 @@
 	      React.createElement(
 	        'div',
 	        { className: 'silver right', style: { fontSize: 16 } },
-	        'Photos 1, 2, 5 and 6 by Ashley Garrett. Photos 3, 4, 7, and 8 by Evan Zimmerman'
+	        'Photos by Ashley Garrett and Evan Zimmerman'
 	      )
 	    );
 	  },

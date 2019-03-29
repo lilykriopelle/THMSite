@@ -26,7 +26,7 @@ var Home = React.createClass({
           <img src="images/dmyc_images/dmyc_6.jpg"/>
           <img src="images/tartuffe_images/tartuffe8.jpg"/>
         </Slider>
-        <div className="silver right" style={{fontSize: 16}}>Photos 1, 2, 5 and 6 by Ashley Garrett. Photos 3, 4, 7, and 8 by Evan Zimmerman</div>
+        <div className="silver right" style={{fontSize: 16}}>Photos by Ashley Garrett and Evan Zimmerman</div>
       </div>
     );
   },
