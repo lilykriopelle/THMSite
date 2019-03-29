@@ -31,8 +31,8 @@ var Home = React.createClass({
 
     return (
       <div style={{width: '80%', margin: 'auto'}}>
-        <div style={{margin: '20px 0'}}>
-          creating a <span className="highlight">{ word }</span> canon
+        <div style={{marginBottom: 50, fontSize: 50, textAlign: 'center'}}>
+          creating a <span className="highlight" style={{fontWeight: 'bold'}}>{ word }</span> canon
         </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
@@ -65,7 +65,6 @@ var Home = React.createClass({
 
   render: function() {
     var word = ['better','fairer','funnier','weirder'][this.state.tick % 4]
-    console.log('THE WORD IS ' + word)
     return (
       <main className="group">
         <section className="front-page">

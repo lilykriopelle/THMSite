@@ -27063,11 +27063,11 @@
 	      { style: { width: '80%', margin: 'auto' } },
 	      React.createElement(
 	        'div',
-	        { style: { margin: '20px 0' } },
+	        { style: { marginBottom: 50, fontSize: 50, textAlign: 'center' } },
 	        'creating a ',
 	        React.createElement(
 	          'span',
-	          { className: 'highlight' },
+	          { className: 'highlight', style: { fontWeight: 'bold' } },
 	          word
 	        ),
 	        ' canon'
@@ -27112,7 +27112,6 @@
 	
 	  render: function () {
 	    var word = ['better', 'fairer', 'funnier', 'weirder'][this.state.tick % 4];
-	    console.log('THE WORD IS ' + word);
 	    return React.createElement(
 	      'main',
 	      { className: 'group' },
