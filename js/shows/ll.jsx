@@ -102,7 +102,7 @@ var LeonceAndLena = React.createClass({
         <section className="show-details">
           <div className="group">
             <div className="credits" style={{float: "left", textAlign: "left"}}>
-              <h1 style={{fontSize: "30", width: 400}}>Georg Büchner's Leonce and Lena</h1>
+              <h1 style={{fontSize: "30"}}>Georg Büchner's Leonce and Lena</h1>
               <h2 style={{fontWeight: "400"}}>tranlated/adapted by Leonie Bell</h2>
               <h2 style={{fontWeight: "400"}}>directed by Lily Riopelle</h2>
             </div>

@@ -36822,7 +36822,7 @@
 	            { className: 'credits', style: { float: "left", textAlign: "left" } },
 	            React.createElement(
 	              'h1',
-	              { style: { fontSize: "30", width: 400 } },
+	              { style: { fontSize: "30" } },
 	              'Georg Büchner\'s Leonce and Lena'
 	            ),
 	            React.createElement(
