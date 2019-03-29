@@ -14,7 +14,7 @@ var Home = React.createClass({
     window.clearInterval(this.interval)
   },
 
-  noShow: function() {
+  noShow: function (word) {
     var settings = {
      dots: false,
      infinite: true,
@@ -27,7 +27,7 @@ var Home = React.createClass({
     return (
       <div style={{width: '80%', margin: 'auto'}}>
         <div style={{margin: '20px 0'}}>
-          creating a <span className="highlight">{ ['better','fairer','funnier','weirder'][this.tick % 4] }</span> canon
+          creating a <span className="highlight">{ word }</span> canon
         </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
@@ -60,11 +60,10 @@ var Home = React.createClass({
 
   render: function() {
     var word = ['better','fairer','funnier','weirder'][this.tick % 4]
-    debugger
     return (
       <main className="group">
         <section className="front-page">
-            {this.noShow.bind(this)()}
+            {this.noShow(word)}
         </section>
       </main>
     );

@@ -27043,7 +27043,7 @@
 	    window.clearInterval(this.interval);
 	  },
 	
-	  noShow: function () {
+	  noShow: function (word) {
 	    var settings = {
 	      dots: false,
 	      infinite: true,
@@ -27063,7 +27063,7 @@
 	        React.createElement(
 	          'span',
 	          { className: 'highlight' },
-	          ['better', 'fairer', 'funnier', 'weirder'][this.tick % 4]
+	          word
 	        ),
 	        ' canon'
 	      ),
@@ -27107,14 +27107,13 @@
 	
 	  render: function () {
 	    var word = ['better', 'fairer', 'funnier', 'weirder'][this.tick % 4];
-	    debugger;
 	    return React.createElement(
 	      'main',
 	      { className: 'group' },
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.noShow.bind(this)()
+	        this.noShow(word)
 	      )
 	    );
 	  }
