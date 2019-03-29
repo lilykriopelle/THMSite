@@ -36669,7 +36669,7 @@
 	            { className: 'credits', style: { float: "left", textAlign: "left" } },
 	            React.createElement(
 	              'h1',
-	              { style: { fontSize: "30" } },
+	              { style: { fontSize: "30", width: 400 } },
 	              'Karaoke at The Golden Sun Convention Center'
 	            ),
 	            React.createElement(
@@ -36724,7 +36724,7 @@
 	          React.createElement(
 	            'div',
 	            { className: 'centered' },
-	            'Featuring Molly Carden*, Quinn Franzen*, Michael Grew*, Ying Ying Li*, and Akyiaa Wilson.'
+	            'Featuring Molly Carden*, Quinn Franzen*, Michael Grew*, Ying Ying Li*, Charlie Tolan, and Akyiaa Wilson.'
 	          )
 	        ),
 	        React.createElement(Gallery, { className: 'retreat-carousel', items: this.PHOTOSET })

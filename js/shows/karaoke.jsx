@@ -102,7 +102,7 @@ var Retreat = React.createClass({
         <section className="show-details">
           <div className="group">
             <div className="credits" style={{float: "left", textAlign: "left"}}>
-              <h1 style={{fontSize: "30"}}>Karaoke at The Golden Sun Convention Center</h1>
+              <h1 style={{fontSize: "30", width: 400}}>Karaoke at The Golden Sun Convention Center</h1>
               <h2 style={{fontWeight: "400"}}>by Jahna Ferron-Smith</h2>
               <h2 style={{fontWeight: "400"}}>directed by Molly Clifford</h2>
             </div>
@@ -120,7 +120,7 @@ var Retreat = React.createClass({
 
           <div className="credits" style={{textAlign: "center"}}>
             <div className="centered">
-              Featuring Molly Carden*, Quinn Franzen*, Michael Grew*, Ying Ying Li*, and Akyiaa Wilson.
+              Featuring Molly Carden*, Quinn Franzen*, Michael Grew*, Ying Ying Li*, Charlie Tolan, and Akyiaa Wilson.
             </div>
           </div>
 
