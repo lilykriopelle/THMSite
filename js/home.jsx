@@ -25,18 +25,10 @@ var Home = React.createClass({
      autoplay: true
    };
 
-   var words = [
-     'better',
-     'fairer',
-     'funnier',
-     'weirder'
-   ]
-
-   debugger
     return (
       <div style={{width: '80%', margin: 'auto'}}>
         <div style={{margin: '20px 0'}}>
-          creating a <span className="highlight">{ words[this.tick % 4] }</span> canon
+          creating a <span className="highlight">{ ['better','fairer','funnier','weirder'][this.tick % 4] }</span> canon
         </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
@@ -68,6 +60,8 @@ var Home = React.createClass({
   },
 
   render: function() {
+    var word = ['better','fairer','funnier','weirder'][this.tick % 4]
+    debugger
     return (
       <main className="group">
         <section className="front-page">

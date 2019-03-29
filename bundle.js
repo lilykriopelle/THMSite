@@ -27054,9 +27054,6 @@
 	      autoplay: true
 	    };
 	
-	    var words = ['better', 'fairer', 'funnier', 'weirder'];
-	
-	    debugger;
 	    return React.createElement(
 	      'div',
 	      { style: { width: '80%', margin: 'auto' } },
@@ -27067,7 +27064,7 @@
 	        React.createElement(
 	          'span',
 	          { className: 'highlight' },
-	          words[this.tick % 4]
+	          ['better', 'fairer', 'funnier', 'weirder'][this.tick % 4]
 	        ),
 	        ' canon'
 	      ),
@@ -27110,6 +27107,8 @@
 	  },
 	
 	  render: function () {
+	    var word = ['better', 'fairer', 'funnier', 'weirder'][this.tick % 4];
+	    debugger;
 	    return React.createElement(
 	      'main',
 	      { className: 'group' },
