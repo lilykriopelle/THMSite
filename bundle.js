@@ -27035,11 +27035,12 @@
 	  componentDidMount: function () {
 	    this.tick = 0;
 	    this.interval = setInterval(function () {
+	      debugger;
 	      this.tick += 1;
 	    }.bind(this), 2000);
 	  },
 	
-	  componentWillUnmount() {
+	  componentWillUnmount: function () {
 	    window.clearInterval(this.interval);
 	  },
 	
@@ -27115,7 +27116,7 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.noShow()
+	        this.noShow.bind(this)()
 	      )
 	    );
 	  }
