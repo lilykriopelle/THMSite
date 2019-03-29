@@ -3,10 +3,15 @@ var TicketLink = require('./ticket_link.jsx');
 var Slider = require('react-slick');
 
 var Home = React.createClass({
+  getInitialState: function () {
+    return {
+      tick: 0
+    }
+  },
+
   componentDidMount: function () {
-    this.tick = 0
     this.interval = setInterval(function() {
-      this.tick += 1
+      this.setState({tick: this.state.tick + 1})
     }.bind(this), 2000)
   },
 
@@ -59,8 +64,8 @@ var Home = React.createClass({
   },
 
   render: function() {
-    var word = ['better','fairer','funnier','weirder'][this.tick % 4]
-    console.log(word)
+    var word = ['better','fairer','funnier','weirder'][this.state.tick % 4]
+    console.log('THE WORD IS ' + word)
     return (
       <main className="group">
         <section className="front-page">

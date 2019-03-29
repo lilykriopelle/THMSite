@@ -27032,10 +27032,15 @@
 	var Home = React.createClass({
 	  displayName: 'Home',
 	
+	  getInitialState: function () {
+	    return {
+	      tick: 0
+	    };
+	  },
+	
 	  componentDidMount: function () {
-	    this.tick = 0;
 	    this.interval = setInterval(function () {
-	      this.tick += 1;
+	      this.setState({ tick: this.state.tick + 1 });
 	    }.bind(this), 2000);
 	  },
 	
@@ -27098,8 +27103,8 @@
 	  },
 	
 	  render: function () {
-	    var word = ['better', 'fairer', 'funnier', 'weirder'][this.tick % 4];
-	    console.log(word);
+	    var word = ['better', 'fairer', 'funnier', 'weirder'][this.state.tick % 4];
+	    console.log('THE WORD IS ' + word);
 	    return React.createElement(
 	      'main',
 	      { className: 'group' },
