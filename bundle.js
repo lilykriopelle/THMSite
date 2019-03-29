@@ -27032,6 +27032,17 @@
 	var Home = React.createClass({
 	  displayName: 'Home',
 	
+	  componentDidMount: function () {
+	    this.tick = 0;
+	    this.interval = setInterval(function () {
+	      this.tick += 1;
+	    }.bind(this), 2000);
+	  },
+	
+	  componentWillUnmount() {
+	    window.clearInterval(this.interval);
+	  },
+	
 	  noShow: function () {
 	    var settings = {
 	      dots: false,
@@ -27041,27 +27052,22 @@
 	      slidesToScroll: 1,
 	      autoplay: true
 	    };
+	
+	    var words = ['better', 'fairer', 'funnier', 'weirder'];
+	
 	    return React.createElement(
 	      'div',
 	      { style: { width: '80%', margin: 'auto' } },
 	      React.createElement(
 	        'div',
 	        { style: { margin: '20px 0' } },
+	        'creating a ',
 	        React.createElement(
-	          'p',
-	          null,
-	          ' Two Headed Rep produces new and classic plays in repertory. '
+	          'div',
+	          { className: 'highlight' },
+	          words[this.tick % 4]
 	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'We create adaptations of classics that are politically responsible as well as fun, and commission new work, inspired by these classics, from playwrights whose perspectives have historically been excluded from the theatrical canon.'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'By inviting a spectrum of diverse responses to the classics, we create a more equitable, inclusive, and innovative canon for future generations to inherit.'
-	        )
+	        ' canon'
 	      ),
 	      React.createElement(
 	        Slider,

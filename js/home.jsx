@@ -3,6 +3,17 @@ var TicketLink = require('./ticket_link.jsx');
 var Slider = require('react-slick');
 
 var Home = React.createClass({
+  componentDidMount: function () {
+    this.tick = 0
+    this.interval = setInterval(function() {
+      this.tick += 1
+    }.bind(this), 2000)
+  },
+
+  componentWillUnmount () {
+    window.clearInterval(this.interval)
+  },
+
   noShow: function() {
     var settings = {
      dots: false,
@@ -12,16 +23,18 @@ var Home = React.createClass({
      slidesToScroll: 1,
      autoplay: true
    };
+
+   var words = [
+     'better',
+     'fairer',
+     'funnier',
+     'weirder'
+   ]
+
     return (
       <div style={{width: '80%', margin: 'auto'}}>
         <div style={{margin: '20px 0'}}>
-          <p> Two Headed Rep produces new and classic plays in repertory. </p>
-          <p>
-            We create adaptations of classics that are politically responsible as well as fun, and commission new work, inspired by these classics, from playwrights whose perspectives have historically been excluded from the theatrical canon.
-          </p>
-          <p>
-            By inviting a spectrum of diverse responses to the classics, we create a more equitable, inclusive, and innovative canon for future generations to inherit.
-          </p>
+          creating a <div className="highlight">{ words[this.tick % 4] }</div> canon
         </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
