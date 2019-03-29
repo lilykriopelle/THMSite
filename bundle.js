@@ -81,6 +81,7 @@
 	var Reno = __webpack_require__(320);
 	var MissJulie = __webpack_require__(321);
 	var Karaoke = __webpack_require__(322);
+	var LeonceAndLena = __webpack_require__(323);
 	
 	// ROUTING
 	var Router = __webpack_require__(34).Router;
@@ -128,6 +129,7 @@
 	      React.createElement(Route, { path: 'reno_and_moll', component: Reno }),
 	      React.createElement(Route, { path: 'miss_julie', component: MissJulie }),
 	      React.createElement(Route, { path: 'karaoke', component: Karaoke }),
+	      React.createElement(Route, { path: 'leonce_and_lena', component: LeonceAndLena }),
 	      React.createElement(Route, { path: 'restaurant', component: Restaurant }),
 	      React.createElement(Route, { path: 'tickets', component: Tickets })
 	    )
@@ -30506,7 +30508,6 @@
 	            'Access Theater'
 	          )
 	        ),
-	        React.createElement('img', { src: 'images/llkaraokesidebyside.jpg', style: { width: 600, margin: 'auto' }, target: '_blank' }),
 	        React.createElement(
 	          'div',
 	          { style: { marginTop: 20 }, className: 'centered' },
@@ -30529,8 +30530,8 @@
 	        React.createElement(
 	          'div',
 	          { className: 'group', style: { marginTop: 20 } },
-	          React.createElement(ShowPreview, { classes: ["float-left"], title: 'LEONCE & LENA', imageUrl: 'images/ll_images/ll4.jpg', link: '/karaoke' }),
-	          React.createElement(ShowPreview, { classes: ["float-right"], title: 'KARAOKE AT THE GOLDEN SUN CONVENTION CENTER', imageUrl: 'images/karaoke_images/karaoke1.jpg', link: '/karaoke' })
+	          React.createElement(ShowPreview, { classes: ["float-left"], title: 'KARAOKE AT THE GOLDEN SUN CONVENTION CENTER', imageUrl: 'images/karaoke_images/karaoke1.jpg', link: '/karaoke' }),
+	          React.createElement(ShowPreview, { classes: ["float-right"], title: 'LEONCE & LENA', imageUrl: 'images/ll_images/ll1.jpg', link: '/leonce_and_lena' })
 	        )
 	      )
 	    );
@@ -36713,6 +36714,184 @@
 	});
 	
 	module.exports = Retreat;
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Gallery = __webpack_require__(268);
+	
+	var LeonceAndLena = React.createClass({
+	  displayName: 'LeonceAndLena',
+	
+	  PHOTOSET: [{
+	    src: "images/ll_images/ll1.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll1.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll2.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll2.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll3.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll3.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll4.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll4.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll5.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll5.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll6.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll6.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll7.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll7.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll8.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll8.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll9.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/ll_images/ll9.jpg"
+	    }
+	  }, {
+	    src: "images/ll_images/ll10.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/ll_images/ll10.jpg"
+	    }
+	  }],
+	
+	  render: function () {
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'section',
+	        { className: 'show-details' },
+	        React.createElement(
+	          'div',
+	          { className: 'group' },
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "left", textAlign: "left" } },
+	            React.createElement(
+	              'h1',
+	              { style: { fontSize: "30", width: 400 } },
+	              'Georg Büchner\'s Leonce and Lena'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'tranlated/adapted by Leonie Bell'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'directed by Lily Riopelle'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "right", textAlign: "right" } },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Scenic Design by Cate McCrea'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Costume Design by Nicole Slaven'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Lighting Design by Cheyenne Sykes'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sound Design by Jessica Hart'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Photos by Ashley Garrett'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { style: { marginBottom: 20, textAlign: "justify" } },
+	          'When Prince Leonce learns that he\'s to wed Princess Lena – a woman he\'s never even laid eyes on – he and his BFF run away (to Italy!) to escape his fate and chase his ideals. Meanwhile, in another kingdom, Princess Lena learns she\'s to marry a prince named Leonce. Unwilling to be boxed in to the role of compliant wife to some dude she\'s never met and certainly doesn\'t love, she and her BFF run away (to Italy!) to escape her fate and chase her ideals. Oh, and this is a fairytale, so you can guess what happens next. Georg Büchner\'s raucous satire lampoons aristocracy, pseudo-philosophical bluster, and political echo chambers all while asking the question: who gets to rest easy knowing that fate will take care of everything in the end?'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'credits', style: { textAlign: "center" } },
+	          React.createElement(
+	            'div',
+	            { className: 'centered' },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Featuring Charles Baran*, Will Dagger, Eric Folks, Grace Gilmore, Zach Fike Hodges*, Zia Lawrence, and Layla Wolfgang.'
+	            )
+	          )
+	        ),
+	        React.createElement(Gallery, { className: 'retreat-carousel', items: this.PHOTOSET })
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = LeonceAndLena;
 
 /***/ }
 /******/ ]);

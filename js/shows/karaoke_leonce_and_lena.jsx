@@ -26,8 +26,6 @@ var KaraokeLL = React.createClass({
             <div className="centered">Access Theater</div>
           </div>
 
-          <img src={'images/llkaraokesidebyside.jpg'} style={{width: 600, margin: 'auto'}} target="_blank"/>
-
           <div style={{marginTop: 20}} className="centered">
             <p>Featuring Charles Baran*, Molly Carden*, Will Dagger, Eric Folks, Quinn Franzen*, Grace Gilmore, Michael Grew*, Zach Fike Hodges*, Zia Lawrence, Ying Ying Li*, Akyiaa Wilson, and Layla Wolfgang.</p>
             <p style={{textAlign: 'right', marginTop: 0}}>*Denotes members of Actors Equity Association</p>
@@ -35,8 +33,8 @@ var KaraokeLL = React.createClass({
           </div>
 
           <div className="group" style={{marginTop: 20}}>
-            <ShowPreview classes={["float-left"]} title="LEONCE & LENA" imageUrl="images/ll_images/ll4.jpg" link="/karaoke"/>
-            <ShowPreview classes={["float-right"]} title="KARAOKE AT THE GOLDEN SUN CONVENTION CENTER" imageUrl="images/karaoke_images/karaoke1.jpg" link="/karaoke"/>
+            <ShowPreview classes={["float-left"]} title="KARAOKE AT THE GOLDEN SUN CONVENTION CENTER" imageUrl="images/karaoke_images/karaoke1.jpg" link="/karaoke"/>
+            <ShowPreview classes={["float-right"]} title="LEONCE & LENA" imageUrl="images/ll_images/ll1.jpg" link="/leonce_and_lena"/>
           </div>
         </section>
       </main>
