@@ -31,10 +31,11 @@ var Home = React.createClass({
      'weirder'
    ]
 
+   debugger
     return (
       <div style={{width: '80%', margin: 'auto'}}>
         <div style={{margin: '20px 0'}}>
-          creating a <div className="highlight">{ words[this.tick % 4] }</div> canon
+          creating a <span className="highlight">{ words[this.tick % 4] }</span> canon
         </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>

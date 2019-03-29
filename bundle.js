@@ -27055,6 +27055,7 @@
 	
 	    var words = ['better', 'fairer', 'funnier', 'weirder'];
 	
+	    debugger;
 	    return React.createElement(
 	      'div',
 	      { style: { width: '80%', margin: 'auto' } },
@@ -27063,7 +27064,7 @@
 	        { style: { margin: '20px 0' } },
 	        'creating a ',
 	        React.createElement(
-	          'div',
+	          'span',
 	          { className: 'highlight' },
 	          words[this.tick % 4]
 	        ),
