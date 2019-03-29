@@ -27043,6 +27043,8 @@
 	      React.createElement(
 	        Slider,
 	        settings,
+	        React.createElement('img', { src: 'images/karaoke_images/karaoke1.jpg' }),
+	        React.createElement('img', { src: 'images/ll_images/ll1.jpg' }),
 	        React.createElement('img', { src: 'images/restaurant_images/restaurant1.jpg' }),
 	        React.createElement('img', { src: 'images/lysistrata_images/lysistrata1.jpg' }),
 	        React.createElement('img', { src: 'images/dmyc_images/dmyc_2.jpg' }),
@@ -27083,7 +27085,7 @@
 	      React.createElement(
 	        'section',
 	        { className: 'front-page' },
-	        this.show()
+	        this.noShow()
 	      )
 	    );
 	  }

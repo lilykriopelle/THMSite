@@ -15,6 +15,8 @@ var Home = React.createClass({
     return (
       <div style={{width: '80%', margin: 'auto'}}>
         <Slider {...settings}>
+          <img src="images/karaoke_images/karaoke1.jpg"/>
+          <img src="images/ll_images/ll1.jpg"/>
           <img src="images/restaurant_images/restaurant1.jpg"/>
           <img src="images/lysistrata_images/lysistrata1.jpg"/>
           <img src="images/dmyc_images/dmyc_2.jpg"/>
@@ -45,7 +47,7 @@ var Home = React.createClass({
     return (
       <main className="group">
         <section className="front-page">
-            {this.show()}
+            {this.noShow()}
         </section>
       </main>
     );
