@@ -14,6 +14,15 @@ var Home = React.createClass({
    };
     return (
       <div style={{width: '80%', margin: 'auto'}}>
+        <div style={{margin: '20px 0'}}>
+          <p> Two Headed Rep produces new and classic plays in repertory. </p>
+          <p>
+            We create adaptations of classics that are politically responsible as well as fun, and commission new work, inspired by these classics, from playwrights whose perspectives have historically been excluded from the theatrical canon.
+          </p>
+          <p>
+            By inviting a spectrum of diverse responses to the classics, we create a more equitable, inclusive, and innovative canon for future generations to inherit.
+          </p>
+        </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
           <img src="images/ll_images/ll1.jpg"/>

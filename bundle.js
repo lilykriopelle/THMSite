@@ -27045,6 +27045,25 @@
 	      'div',
 	      { style: { width: '80%', margin: 'auto' } },
 	      React.createElement(
+	        'div',
+	        { style: { margin: '20px 0' } },
+	        React.createElement(
+	          'p',
+	          null,
+	          ' Two Headed Rep produces new and classic plays in repertory. '
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'We create adaptations of classics that are politically responsible as well as fun, and commission new work, inspired by these classics, from playwrights whose perspectives have historically been excluded from the theatrical canon.'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'By inviting a spectrum of diverse responses to the classics, we create a more equitable, inclusive, and innovative canon for future generations to inherit.'
+	        )
+	      ),
+	      React.createElement(
 	        Slider,
 	        settings,
 	        React.createElement('img', { src: 'images/karaoke_images/karaoke1.jpg' }),
