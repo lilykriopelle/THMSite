@@ -34,6 +34,7 @@ var Lysistrata = require('./shows/lysistrata.jsx');
 var Restaurant = require('./shows/restaurant.jsx');
 var Reno = require('./shows/rm.jsx');
 var MissJulie = require('./shows/mj.jsx');
+var Karaoke = require('./shows/karaoke.jsx');
 
 // ROUTING
 var Router = require('react-router').Router;
@@ -76,6 +77,7 @@ $(function() {
         <Route path="lysistrata" component={Lysistrata}/>
         <Route path="reno_and_moll" component={Reno}/>
         <Route path="miss_julie" component={MissJulie}/>
+        <Route path="karaoke" component={Karaoke}/>
         <Route path="restaurant" component={Restaurant}/>
         <Route path="tickets" component={Tickets}/>
       </Route>

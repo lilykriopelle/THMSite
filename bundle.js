@@ -80,6 +80,7 @@
 	var Restaurant = __webpack_require__(319);
 	var Reno = __webpack_require__(320);
 	var MissJulie = __webpack_require__(321);
+	var Karaoke = __webpack_require__(322);
 	
 	// ROUTING
 	var Router = __webpack_require__(34).Router;
@@ -126,6 +127,7 @@
 	      React.createElement(Route, { path: 'lysistrata', component: Lysistrata }),
 	      React.createElement(Route, { path: 'reno_and_moll', component: Reno }),
 	      React.createElement(Route, { path: 'miss_julie', component: MissJulie }),
+	      React.createElement(Route, { path: 'karaoke', component: Karaoke }),
 	      React.createElement(Route, { path: 'restaurant', component: Restaurant }),
 	      React.createElement(Route, { path: 'tickets', component: Tickets })
 	    )
@@ -36549,6 +36551,180 @@
 	              null,
 	              ' Krissy ............................................................................. Rachel Sachnoff '
 	            )
+	          )
+	        ),
+	        React.createElement(Gallery, { className: 'retreat-carousel', items: this.PHOTOSET })
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = Retreat;
+
+/***/ },
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Gallery = __webpack_require__(268);
+	
+	var Retreat = React.createClass({
+	  displayName: 'Retreat',
+	
+	  PHOTOSET: [{
+	    src: "images/karaoke_images/karaoke1.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke1.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke2.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke2.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke3.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke3.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke4.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke4.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke5.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke5.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke6.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke6.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke7.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke7.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke8.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke8.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke9.jpg",
+	    width: 600,
+	    height: 400,
+	    aspectRatio: 1.5,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke9.jpg"
+	    }
+	  }, {
+	    src: "images/karaoke_images/karaoke10.jpg",
+	    width: 400,
+	    height: 600,
+	    aspectRatio: 0.66,
+	    lightboxImage: {
+	      src: "images/karaoke_images/karaoke10.jpg"
+	    }
+	  }],
+	
+	  render: function () {
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'section',
+	        { className: 'show-details' },
+	        React.createElement(
+	          'div',
+	          { className: 'group' },
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "left", textAlign: "left" } },
+	            React.createElement(
+	              'h1',
+	              { style: { fontSize: "30" } },
+	              'Karaoke at The Golden Sun Convention Center'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'by Jahna Ferron-Smith'
+	            ),
+	            React.createElement(
+	              'h2',
+	              { style: { fontWeight: "400" } },
+	              'directed by Molly Clifford'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'credits', style: { float: "right", textAlign: "right" } },
+	            React.createElement(
+	              'p',
+	              null,
+	              'Scenic Design by Cate McCrea'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Costume Design by Nicole Slaven'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Lighting Design by Cheyenne Sykes'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Sound Design by Jessica Hart'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Photos by Ashley Garrett'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { style: { marginBottom: 20, textAlign: "justify" } },
+	          'This Merger is happening. Sandwiched between team building exercises and more team building exercises is a mandatory karaoke hour at The Golden Sun Convention Center where everyone has to sing for their job. While Lenny and Vince vamp onstage and Elena and Janet hide in Stairwell D, Big Boss Pete is in the back still working with the numbers and there’s not enough Svedka & OJ to assuage everyone’s existential panic: Who’s getting fired? Who’s staying hired? And which is worse? Don’t worry. No matter what happens, everyone gets tote bags, toothpicks, and a killer selection of midi files to take with them on the road to whatever comes next.'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'credits', style: { textAlign: "center" } },
+	          React.createElement(
+	            'div',
+	            { className: 'centered' },
+	            'Featuring Molly Carden*, Quinn Franzen*, Michael Grew*, Ying Ying Li*, and Akyiaa Wilson.'
 	          )
 	        ),
 	        React.createElement(Gallery, { className: 'retreat-carousel', items: this.PHOTOSET })
