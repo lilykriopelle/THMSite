@@ -24,11 +24,11 @@ var Home = React.createClass({
      autoplay: true
    };
 
+   // <div style={{margin: '20px 0'}}>
+     // creating a <span className="highlight">{ word }</span> canon
+   // </div>
     return (
       <div style={{width: '80%', margin: 'auto'}}>
-        <div style={{margin: '20px 0'}}>
-          creating a <span className="highlight">{ word }</span> canon
-        </div>
         <Slider {...settings}>
           <img src="images/karaoke_images/karaoke1.jpg"/>
           <img src="images/ll_images/ll1.jpg"/>
@@ -60,10 +60,11 @@ var Home = React.createClass({
 
   render: function() {
     var word = ['better','fairer','funnier','weirder'][this.tick % 4]
+    console.log(word)
     return (
       <main className="group">
         <section className="front-page">
-            {this.noShow(word)}
+            { this.noShow(word) }
         </section>
       </main>
     );
