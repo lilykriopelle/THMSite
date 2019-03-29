@@ -24,9 +24,9 @@ var Retreat = React.createClass({
     },
     {
       src: "images/karaoke_images/karaoke3.jpg",
-      width: 600,
-      height: 400,
-      aspectRatio: 1.5,
+      width: 400,
+      height: 600,
+      aspectRatio: 0.66,
       lightboxImage: {
         src: "images/karaoke_images/karaoke3.jpg"
       }
@@ -71,7 +71,7 @@ var Retreat = React.createClass({
       src: "images/karaoke_images/karaoke8.jpg",
       width: 400,
       height: 600,
-      aspectRatio: 1.5,
+      aspectRatio: 0.66,
       lightboxImage: {
         src: "images/karaoke_images/karaoke8.jpg"
       }
