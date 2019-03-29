@@ -27035,7 +27035,6 @@
 	  componentDidMount: function () {
 	    this.tick = 0;
 	    this.interval = setInterval(function () {
-	      debugger;
 	      this.tick += 1;
 	    }.bind(this), 2000);
 	  },
