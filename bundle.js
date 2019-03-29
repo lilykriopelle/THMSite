@@ -27058,12 +27058,20 @@
 	      autoplay: true
 	    };
 	
-	    // <div style={{margin: '20px 0'}}>
-	    // creating a <span className="highlight">{ word }</span> canon
-	    // </div>
 	    return React.createElement(
 	      'div',
 	      { style: { width: '80%', margin: 'auto' } },
+	      React.createElement(
+	        'div',
+	        { style: { margin: '20px 0' } },
+	        'creating a ',
+	        React.createElement(
+	          'span',
+	          { className: 'highlight' },
+	          word
+	        ),
+	        ' canon'
+	      ),
 	      React.createElement(
 	        Slider,
 	        settings,
