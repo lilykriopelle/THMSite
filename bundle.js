@@ -26957,7 +26957,7 @@
 	        ),
 	        React.createElement(
 	          "ul",
-	          { className: "nav-links group" },
+	          { className: "nav-links group", style: { display: 'flex', justifyContent: 'center' } },
 	          React.createElement(
 	            "li",
 	            null,
@@ -27001,15 +27001,6 @@
 	              "a",
 	              { className: this.highlightClass("blog"), target: "_blank", href: "http://blog.twoheadedrep.com" },
 	              "the archive"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            React.createElement(
-	              "a",
-	              { className: "ticket-tab", target: "_blank", href: "https://www.artful.ly/two-headed-rep" },
-	              "tickets"
 	            )
 	          )
 	        )
@@ -29670,9 +29661,9 @@
 	              React.createElement(
 	                "h2",
 	                null,
-	                "Katie Falter – Associate Producer"
+	                "Maya Davis – Artistic Associate"
 	              ),
-	              "Katie Falter is a NYC based director and producer from the Buckeye State. She directed and produced the FringeFAVE run of The Starter by Sean Murphy at the 2015 New York International Fringe Festival. Favorite credits include Broadway: ALLEGIANCE. National Tour: Disney's Beauty and the Beast. NYC: RETREAT/Electra (Two Headed Rep), Animals Out of Paper (YOLO! Productions), BOHEMIAN LIGHTS (LiveSource), Danny and the Deep Blue Sea (YOLO! Productions), and Mother Jones and the Children's Crusade (NYMF). She is also the Associate Producer for the upcoming web series Keep Me Posted. Proud alum of Otterbein University."
+	              "Maya Davis is a NYC-based director and producer originally from DC. She has directed, assisted, and produced in NYC at institutions including The Flea, The Public Theater, The Drawing Center, and Fordham Theatre Program, and regionally at Williamstown Theatre Festival and The Big Sky Theatre Company. Alumna of Fordham University."
 	            )
 	          )
 	        )
